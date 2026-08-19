@@ -1,0 +1,383 @@
+<!doctype html>
+<html lang="es" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portafolio de Daniel, desarrollador de software y diseñador UX/UI. Proyectos profesionales y personales de diseño, web y software.">
+  <meta name="theme-color" content="#f3efe5">
+  <title>Daniel — Desarrollador de Software y Diseñador UX/UI</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <div class="scroll-progress" aria-hidden="true"><span></span></div>
+  <div class="cursor cursor-dot" aria-hidden="true"></div>
+  <div class="cursor cursor-ring" aria-hidden="true"><span>VER</span></div>
+
+  <header class="site-header" id="inicio">
+    <a class="wordmark magnetic" href="#inicio" aria-label="Daniel, volver al inicio">
+      <span>DZ</span>
+    </a>
+    <nav class="main-nav" aria-label="Navegación principal">
+      <a href="#proyectos">Proyectos</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#sobre-mi">Sobre mí</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <button class="theme-toggle magnetic" type="button" aria-label="Activar tema oscuro" aria-pressed="false">
+      <span aria-hidden="true" class="theme-toggle__icon">◐</span>
+      <span class="theme-toggle__text">Oscuro</span>
+    </button>
+  </header>
+
+  <main id="contenido">
+    <section class="hero section-shell" aria-labelledby="hero-title">
+      <canvas class="hero-field" id="hero-field" aria-hidden="true"></canvas>
+      <div class="hero-noise" aria-hidden="true"></div>
+
+   
+
+      <div class="hero-title-wrap" data-tilt-zone>
+        
+        <h1 id="hero-title" class="hero-title reveal">
+          <span>Desarrollador</span>
+          <span>de Software <i aria-hidden="true">↘</i></span>
+          <span class="hero-title__outline">Diseñador UX/UI</span>
+        </h1>
+        <div class="hero-stamp" aria-hidden="true">
+          <span>Diseño</span><b>+</b><span>Código</span>
+        </div>
+      </div>
+
+      <div class="hero-bottom reveal">
+        <p class="hero-description">Llevo ocho años trabajando entre el diseño y el desarrollo web. Puedo integrarme en un equipo para resolver una necesidad concreta o participar en todo el proceso, colaborando de cerca y cuidando que el resultado sea útil, sólido y esté bien construido.</p>
+        <div class="hero-actions">
+          <a class="button button--primary magnetic" href="#proyectos"><span>Ver proyectos</span><span aria-hidden="true">↓</span></a>
+          <a class="button button--secondary magnetic" href="#contacto"><span>Contactar</span><span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+
+      <div class="hero-orbit" aria-hidden="true">
+        <span class="orbit-word orbit-word--one">ENTENDER</span>
+        <span class="orbit-word orbit-word--two">DISEÑAR</span>
+        <span class="orbit-word orbit-word--three">CONSTRUIR</span>
+      </div>
+    </section>
+
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker__track">
+        <span class="ticker__set" data-ticker-set>
+          <span>Diseño UX/UI</span><i>✳</i><span>Investigación UX</span><i>✳</i><span>Arquitectura de contenidos</span><i>✳</i><span>Desarrollo web</span><i>✳</i><span>Desarrollo front-end</span><i>✳</i><span> Figma</span><i>✳</i><span>WordPress</span><i>✳</i><span>React</span><i>✳</i><span>Astro</span><i>✳</i><span>Next.js</span><i>✳</i><span>E-commerce</span><i>✳</i><span>Design System</span><i>✳</i><span>Formularios y flujos</span><i>✳</i><span>Arquitectura headless</span><i>✳</i><span>React Native</span><i>✳</i><span>IA aplicada</span><i>✳</i>
+        </span>
+      </div>
+    </div>
+
+    <section class="projects section-shell" id="proyectos" aria-labelledby="projects-title">
+      <header class="section-heading reveal">
+        <p class="eyebrow"> TRABAJO</p>
+        <h2 id="projects-title">Proyectos<br><em>seleccionados</em></h2>
+        <p>Una selección de proyectos profesionales y personales que muestra cómo abordo necesidades distintas: entender el contexto, ordenar la experiencia y construir una solución que funcione. En cada proyecto explico cuál era el reto, cuál fue mi participación y qué decisiones guiaron el trabajo.</p>
+      </header>
+
+      <div class="project-group">
+        <div class="project-group__heading reveal">
+          <h3>Proyectos profesionales</h3>
+          <p>Sitios web, tiendas y experiencias digitales desarrolladas para empresas y equipos.</p>
+        </div>
+
+        <div class="project-list">
+          <article class="project-card project-card--canatess reveal" data-project-card="ca-na-tess">
+            <div class="project-card__button">
+              <span class="project-number">01</span>
+              <div class="project-copy">
+                <span class="project-meta"><span>Profesional</span><span>Publicado · 2026</span></span>
+                <h4 id="project-title-ca-na-tess">Ca na Tess</h4>
+                <span class="project-role">Rediseño UX/UI + desarrollo de mejora puntual</span>
+                <span class="project-summary">Rediseñé y desarrollé el formulario de consulta nutricional para pasar de un formulario externo de 12 pasos a una experiencia integrada de 7 pasos.</span>
+              </div>
+              <span class="project-cover cover-form" aria-hidden="true">
+                <span class="cover-label">12 → 7</span>
+                <span class="form-steps"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span>
+                <span class="form-button">CONTINUAR ↗</span>
+              </span>
+              <button class="project-arrow" type="button" data-project="ca-na-tess" aria-labelledby="project-title-ca-na-tess project-cta-ca-na-tess"><span id="project-cta-ca-na-tess">Ver proceso</span><b aria-hidden="true">↗</b></button>
+            </div>
+          </article>
+
+          <article class="project-card project-card--colive reveal" data-project-card="colive">
+            <div class="project-card__button">
+              <span class="project-number">02</span>
+              <div class="project-copy">
+                <span class="project-meta"><span>Profesional</span><span>Propuestas implementadas · 2025</span></span>
+                <h4 id="project-title-colive">Colive</h4>
+                <span class="project-role">Auditoría UX/UI + wireframes + diseño de alta fidelidad</span>
+                <span class="project-summary">Audité el proceso de reserva paso a paso y convertí cada fricción en una propuesta. Colive llevó buena parte de ellas al sitio público.</span>
+              </div>
+              <span class="project-cover cover-colive" aria-hidden="true">
+                <span class="map-line"></span><i class="map-dot map-dot--a"></i><i class="map-dot map-dot--b"></i><i class="map-dot map-dot--c"></i><i class="map-dot map-dot--d"></i>
+                <span class="room-card">01<br><b>BUSCAR</b></span><span class="room-card room-card--last">04<br><b>RESERVAR</b></span>
+              </span>
+              <button class="project-arrow" type="button" data-project="colive" aria-labelledby="project-title-colive project-cta-colive"><span id="project-cta-colive">Ver proceso</span><b aria-hidden="true">↗</b></button>
+            </div>
+          </article>
+
+          <article class="project-card project-card--mega reveal" data-project-card="mega">
+            <div class="project-card__button">
+              <span class="project-number">03</span>
+              <div class="project-copy">
+                <span class="project-meta"><span>Profesional</span><span>Publicado · 2025</span></span>
+                <h4 id="project-title-mega">Mega</h4>
+                <span class="project-role">Implementación front-end · Diseño proporcionado en Figma</span>
+                <span class="project-summary">Convertí en un sitio web funcional el diseño completo definido en Figma, implementando sus pantallas en Elementor Pro sobre WordPress.</span>
+              </div>
+              <span class="project-cover cover-mega" aria-hidden="true">
+                <span class="figma-frame frame-a">DESIGN</span><span class="figma-frame frame-b">BUILD</span><span class="figma-frame frame-c">RESPONSIVE</span>
+                <span class="figma-cursor">↖</span>
+              </span>
+              <button class="project-arrow" type="button" data-project="mega" aria-labelledby="project-title-mega project-cta-mega"><span id="project-cta-mega">Ver proceso</span><b aria-hidden="true">↗</b></button>
+            </div>
+          </article>
+
+          <article class="project-card project-card--barcelo reveal" data-project-card="barcelo-indajaus">
+            <div class="project-card__button">
+              <span class="project-number">04</span>
+              <div class="project-copy">
+                <span class="project-meta"><span>Profesional</span><span>Publicado · 2024</span></span>
+                <h4 id="project-title-barcelo-indajaus">Barceló Indajaus</h4>
+                <span class="project-role">Implementación e-commerce · WordPress a PrestaShop</span>
+                <span class="project-summary">Reproduje en PrestaShop la tienda que existía en WordPress, trasladando su estructura visual y su experiencia de catálogo y producto.</span>
+              </div>
+              <span class="project-cover cover-shop" aria-hidden="true">
+                <span class="shop-awning"></span><span class="shop-window"><i></i><i></i><i></i></span><span class="shop-caption">CATÁLOGO / PRODUCTO</span>
+              </span>
+              <button class="project-arrow" type="button" data-project="barcelo-indajaus" aria-labelledby="project-title-barcelo-indajaus project-cta-barcelo-indajaus"><span id="project-cta-barcelo-indajaus">Ver proceso</span><b aria-hidden="true">↗</b></button>
+            </div>
+          </article>
+        </div>
+
+        <div class="project-more reveal">
+          <a class="button button--secondary magnetic" href="proyectos.html"><span>Ver todos los proyectos</span><span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+
+      <div class="project-group project-group--personal">
+        <div class="project-group__heading reveal">
+          <h3>Proyectos personales</h3>
+          <p>Proyectos que desarrollo por iniciativa propia para explorar ideas, validar decisiones y seguir profundizando en software.</p>
+        </div>
+
+        <div class="project-list">
+          <article class="project-card project-card--calculator reveal" data-project-card="calculadora-ia">
+            <div class="project-card__button">
+              <span class="project-number">05</span>
+              <div class="project-copy">
+                <span class="project-meta"><span>Personal</span><span>Demo pública</span></span>
+                <h4 id="project-title-calculadora-ia">Calculadora de presupuestos con chatbot de IA</h4>
+                <span class="project-role">Diseño + desarrollo + integración de IA</span>
+                <span class="project-summary">Construí una calculadora interactiva para estimar presupuestos de reformas e integré un chatbot con IA para acompañar al usuario.</span>
+              </div>
+              <span class="project-cover cover-calculator" aria-hidden="true">
+                <span class="blueprint"><i></i><i></i><i></i><i></i></span><span class="measure">4,20 M</span><span class="chat-bubble">¿Qué quieres reformar?</span>
+              </span>
+              <button class="project-arrow" type="button" data-project="calculadora-ia" aria-labelledby="project-title-calculadora-ia project-cta-calculadora-ia"><span id="project-cta-calculadora-ia">Ver proceso</span><b aria-hidden="true">↗</b></button>
+            </div>
+          </article>
+
+          <article class="project-card project-card--crm reveal" data-project-card="crm-dz">
+            <div class="project-card__button">
+              <span class="project-number">06</span>
+              <div class="project-copy">
+                <span class="project-meta"><span>Personal</span><span>En desarrollo · staging</span></span>
+                <h4 id="project-title-crm-dz">CRM DZ</h4>
+                <span class="project-role">Aplicación web full-stack · CRM multiagencia</span>
+                <span class="project-summary">Desarrollo un CRM para centralizar clientes, sitios web, horas de mantenimiento, tickets y reportes dentro de un mismo espacio.</span>
+              </div>
+              <span class="project-cover cover-crm" aria-hidden="true">
+                <span class="crm-hub">DZ</span><span class="crm-node node-a">AG</span><span class="crm-node node-b">CL</span><span class="crm-node node-c">TK</span><span class="crm-node node-d">RP</span>
+              </span>
+              <button class="project-arrow" type="button" data-project="crm-dz" aria-labelledby="project-title-crm-dz project-cta-crm-dz"><span id="project-cta-crm-dz">Ver proceso</span><b aria-hidden="true">↗</b></button>
+            </div>
+          </article>
+
+          <article class="project-card project-card--cms reveal" data-project-card="cms-propio">
+            <div class="project-card__button">
+              <span class="project-number">07</span>
+              <div class="project-copy">
+                <span class="project-meta"><span>Personal</span><span>Enero de 2026 · núcleo funcional</span></span>
+              <h4 id="project-title-cms-propio">CMS AI DZ</h4>
+                <span class="project-role">CMS personalizado · Editor por bloques + IA</span>
+                <span class="project-summary">Desarrollo un CMS donde las páginas se crean principalmente desde un chat con IA y después se gestionan, revisan y publican en el panel.</span>
+              </div>
+              <span class="project-cover cover-cms" aria-hidden="true">
+                <span class="cms-sidebar"><i></i><i></i><i></i><i></i></span><span class="cms-canvas"><b>HERO</b><i></i><b>FEATURES</b></span><span class="cms-prompt">/ generar página_</span>
+              </span>
+              <button class="project-arrow" type="button" data-project="cms-propio" aria-labelledby="project-title-cms-propio project-cta-cms-propio"><span id="project-cta-cms-propio">Ver proceso</span><b aria-hidden="true">↗</b></button>
+            </div>
+          </article>
+
+          <article class="project-card project-card--gastos reveal" data-project-card="mis-gastos-local">
+            <div class="project-card__button">
+              <span class="project-number">08</span>
+              <div class="project-copy">
+                <span class="project-meta"><span>Personal</span><span>En desarrollo · MVP local</span></span>
+                <h4 id="project-title-mis-gastos-local">Mis Gastos Local</h4>
+                <span class="project-role">Aplicación Android · React Native · Offline-first</span>
+                <span class="project-summary">Desarrollo una aplicación Android para registrar ingresos y gastos, consultar el saldo y revisar el historial sin depender de un backend.</span>
+              </div>
+              <span class="project-cover cover-gastos" aria-hidden="true">
+                <span class="phone"><span class="phone-balance">SALDO<br><b>LOCAL</b></span><i class="movement movement--in">+ INGRESO</i><i class="movement movement--out">− GASTO</i></span><span class="offline-mark">OFFLINE</span>
+              </span>
+              <button class="project-arrow" type="button" data-project="mis-gastos-local" aria-labelledby="project-title-mis-gastos-local project-cta-mis-gastos-local"><span id="project-cta-mis-gastos-local">Ver proceso</span><b aria-hidden="true">↗</b></button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="services section-shell" id="servicios" aria-labelledby="services-title">
+      <header class="section-heading section-heading--wide reveal">
+        <p class="eyebrow"> CAPACIDADES</p>
+        <h2 id="services-title">En qué puedo<br><em>ayudarte</em></h2>
+        <p>Puedo incorporarme en una fase concreta o combinar diseño y desarrollo cuando el proyecto necesita continuidad entre las decisiones de experiencia y la implementación.</p>
+      </header>
+
+      <div class="service-stack">
+        <article class="service-item reveal">
+          <span class="service-index">A</span>
+          <h3>UX/UI y mejora de experiencias</h3>
+          <p>Analizo recorridos, formularios y procesos para detectar dónde se puede hacer la experiencia más clara. Trabajo en estructura de contenidos, flujos, wireframes, propuestas de mejora e interfaces de alta fidelidad.</p>
+          <ul aria-label="Capacidades de UX/UI"><li>Investigación</li><li>Arquitectura de flujos</li><li>Wireframes</li><li>Sistemas visuales</li></ul>
+        </article>
+        <article class="service-item reveal">
+          <span class="service-index">B</span>
+          <h3>Desarrollo web y plataformas</h3>
+          <p>Desarrollo interfaces y aplicaciones web con JavaScript, React, Astro y Next.js, cuidando la estructura, el comportamiento responsive y la conexión con datos o servicios.</p>
+          <ul aria-label="Capacidades de desarrollo"><li>Front-end desde Figma</li><li>Aplicaciones web</li><li>APIs</li><li>Componentes interactivos</li></ul>
+        </article>
+        <article class="service-item reveal">
+          <span class="service-index">C</span>
+          <h3>WordPress y desarrollos a medida</h3>
+          <p>Creo y mantengo sitios corporativos, tiendas y funcionalidades a medida procurando que el resultado sea editable, claro y adecuado a las necesidades del proyecto. También implemento tiendas en PrestaShop.</p>
+          <ul aria-label="Capacidades de WordPress"><li>Elementor Pro</li><li>Gravity Forms</li><li>Headless</li><li>E-commerce</li></ul>
+        </article>
+      </div>
+
+      <p class="service-note reveal">Puedo ayudarte con UX/UI, desarrollo web y plataformas, WordPress, proyectos headless o una combinación de diseño y desarrollo, según lo que necesite tu proyecto.</p>
+    </section>
+
+    <section class="workflow section-shell" id="forma-de-trabajo" aria-labelledby="workflow-title">
+      <header class="section-heading reveal">
+        <p class="eyebrow"> PROCESO</p>
+        <h2 id="workflow-title">Forma de<br><em>trabajo</em></h2>
+        <p>Cada proyecto empieza por entender qué hay detrás de la petición. Antes de construir, intento conocer el contexto, el negocio, las personas usuarias y la necesidad concreta que hay que resolver.</p>
+      </header>
+
+      <ol class="workflow-list">
+        <li class="reveal"><span>01</span><h3>Entender</h3><p>Hago preguntas, reviso la información disponible y trato de distinguir la necesidad real de la primera idea de implementación.</p></li>
+        <li class="reveal"><span>02</span><h3>Alinear alcance</h3><p>Convertimos ese entendimiento en prioridades, entregables, dependencias, decisiones pendientes y aquello que queda fuera.</p></li>
+        <li class="reveal"><span>03</span><h3>Proponer</h3><p>Presento alternativas cuando tiene sentido, explico las decisiones y señalo los compromisos de cada opción.</p></li>
+        <li class="reveal"><span>04</span><h3>Diseñar y desarrollar</h3><p>Construyo la solución por etapas, manteniendo el foco en las prioridades y revisando estructura, comportamiento y detalles.</p></li>
+        <li class="reveal"><span>05</span><h3>Revisar y entregar</h3><p>Revisamos lo construido frente al alcance y dejo la documentación y el contexto necesarios para dar continuidad.</p></li>
+      </ol>
+
+      <blockquote class="process-quote reveal">“Entiendo el contexto, alineo el alcance, propongo con criterio y diseño o desarrollo por etapas.”</blockquote>
+    </section>
+
+    <section class="about section-shell" id="sobre-mi" aria-labelledby="about-title">
+      <div class="about-portrait reveal" aria-hidden="true">
+    
+      </div>
+      <div class="about-content reveal">
+        <p class="eyebrow"> SOBRE MÍ</p>
+        <h2 id="about-title">Soy Daniel.</h2>
+        <p class="about-lead">Soy desarrollador de software y diseñador UX/UI. Me gusta entender primero qué necesita una persona, un equipo o un negocio y después convertirlo en una experiencia clara y una solución bien construida.</p>
+        <p>Me interesa trabajar cerca del equipo, hacer preguntas y explicar las decisiones para que cada entrega sea útil y mantenible.</p>
+        <p>Llevo ocho años formándome y trabajando alrededor del diseño y el desarrollo web. Mi recorrido comenzó en Producción Multimedia, continuó en Ingeniería Multimedia y evolucionó desde HTML, CSS, JavaScript, PHP y WordPress hacia React, Astro, Next.js y arquitecturas modernas.</p>
+        <div class="timeline" aria-label="Recorrido profesional">
+          <span><b>BASE</b> Multimedia · web</span>
+          <span><b>2022</b> React · arquitecturas modernas</span>
+          <span><b>2023—HOY</b> IA aplicada al desarrollo</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="ai-section section-shell" id="ia-aplicada" aria-labelledby="ai-title">
+      <header class="section-heading section-heading--wide reveal">
+        <p class="eyebrow"> IA APLICADA</p>
+        <h2 id="ai-title">Dirección humana.<br><em>IA como herramienta.</em></h2>
+        <p>Utilizo modelos de IA como parte de un proceso de ingeniería, no como sustituto de la comprensión del problema ni del criterio técnico. La IA me ayuda a investigar, explorar alternativas, escribir y revisar código, pero las decisiones importantes siguen teniendo una dirección humana.</p>
+      </header>
+
+      <div class="ai-console reveal" data-tilt-zone>
+        <div class="ai-console__top"><span>PROCESS.LOG</span><span>HUMAN_IN_THE_LOOP = TRUE</span></div>
+        <div class="ai-console__flow" aria-label="Proceso de desarrollo asistido por IA">
+          <div><span>01</span><b>Contexto</b><small>Objetivo, restricciones y arquitectura</small></div>
+          <i aria-hidden="true">→</i>
+          <div><span>02</span><b>Exploración</b><small>Alternativas y tareas delimitadas</small></div>
+          <i aria-hidden="true">→</i>
+          <div><span>03</span><b>Implementación</b><small>Código con instrucciones consistentes</small></div>
+          <i aria-hidden="true">→</i>
+          <div><span>04</span><b>Validación</b><small>Pruebas, documentación y revisión humana</small></div>
+        </div>
+        <div class="ai-console__bottom"><span>Claude Code</span><span>Codex</span><span>OpenCode</span></div>
+      </div>
+    </section>
+
+    <section class="contact section-shell" id="contacto" aria-labelledby="contact-title">
+      <p class="eyebrow reveal">06 / CONTACTO</p>
+      <div class="contact-grid">
+        <h2 id="contact-title" class="reveal">¿Construimos<br><em>algo útil?</em></h2>
+        <div class="contact-copy reveal">
+          <p>Disponible para nuevos proyectos y colaboraciones.</p>
+          <p>Cuéntame el contexto, la necesidad concreta y el alcance que necesita tu proyecto.</p>
+          <div class="contact-actions">
+            <a class="button button--primary magnetic" href="https://dzionix.com/contacto/" target="_blank" rel="noopener noreferrer" aria-label="Abrir formulario de contacto de Dzionix (se abre en una pestaña nueva)"><span>Abrir contacto</span><span aria-hidden="true">↗</span></a>
+            <a class="button button--secondary magnetic" href="mailto:info@dzionix.com"><span>info@dzionix.com</span><span aria-hidden="true">→</span></a>
+          </div>
+        </div>
+      </div>
+      <div class="contact-marquee" aria-hidden="true"><span>CONTACTAR / CONTACTAR / CONTACTAR /</span></div>
+    </section>
+  </main>
+
+  <footer class="site-footer section-shell">
+    <a href="#inicio">Daniel Felipe Zapata Martinez<span aria-hidden="true">↑</span></a>
+    <p>Diseño UX/UI · Desarrollo de software</p>
+    <p> 2016 - 2026 </p>
+  </footer>
+
+  <dialog class="project-dialog" id="project-dialog" aria-labelledby="dialog-title">
+    <div class="dialog-shell">
+      <header class="dialog-header">
+        <span class="dialog-project-index" aria-hidden="true">CASO / <b id="dialog-index">01</b></span>
+        <button class="dialog-close magnetic" type="button" aria-label="Cerrar caso de proyecto">
+          <span>Cerrar</span><b aria-hidden="true">×</b>
+        </button>
+      </header>
+      <div class="dialog-content" id="dialog-content"></div>
+    </div>
+  </dialog>
+
+  <dialog class="lightbox" id="lightbox" aria-label="Visor de imagen ampliada">
+    <div class="lightbox__shell">
+      <header class="lightbox__bar">
+        <span class="lightbox__label" id="lightbox-label"></span>
+        <span class="lightbox__nav">
+          <button class="lightbox__step" type="button" data-lightbox-prev aria-label="Imagen anterior"><span aria-hidden="true">←</span></button>
+          <span class="lightbox__counter" id="lightbox-counter"></span>
+          <button class="lightbox__step" type="button" data-lightbox-next aria-label="Imagen siguiente"><span aria-hidden="true">→</span></button>
+        </span>
+        <button class="lightbox__close" type="button" data-lightbox-close aria-label="Cerrar el visor de imagen">
+          <span>Cerrar</span><b aria-hidden="true">×</b>
+        </button>
+      </header>
+      <div class="lightbox__stage"><img id="lightbox-image" alt=""></div>
+      <p class="lightbox__caption" id="lightbox-caption"></p>
+    </div>
+  </dialog>
+
+  <div class="sr-only" id="announcer" aria-live="polite" aria-atomic="true"></div>
+</body>
+</html>

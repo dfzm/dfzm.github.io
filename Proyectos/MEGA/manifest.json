@@ -1,0 +1,51 @@
+{
+  "project": "MEGA",
+  "sourceUrl": "https://mega.nl/",
+  "capturedAt": "2026-08-05T11:41:05.176Z",
+  "assets": [
+    {
+      "filename": "Figma 1.png",
+      "kind": "figma",
+      "viewport": { "width": 1795, "height": 835 },
+      "purpose": "Mega Particulares design reference"
+    },
+    {
+      "filename": "Figma 2.png",
+      "kind": "figma",
+      "viewport": { "width": 1435, "height": 930 },
+      "purpose": "Mega Zakelijk design reference"
+    },
+    {
+      "filename": "Mega/Home.png",
+      "kind": "public-capture",
+      "url": "https://www.mega.nl/",
+      "viewport": { "width": 1911, "height": 1135 },
+      "purpose": "Mega Particulares desktop homepage"
+    },
+    {
+      "filename": "Mega/home-movil.png",
+      "kind": "public-capture",
+      "url": "https://www.mega.nl/",
+      "viewport": { "width": 425, "height": 917 },
+      "purpose": "Mega Particulares mobile homepage"
+    },
+    {
+      "filename": "Zakelijk/Home.png",
+      "kind": "public-capture",
+      "url": "https://www.mega.nl/zakelijk/",
+      "viewport": { "width": 1912, "height": 1082 },
+      "purpose": "Mega Zakelijk desktop homepage"
+    },
+    {
+      "filename": "Zakelijk/Home-movil.png",
+      "kind": "public-capture",
+      "url": "https://www.mega.nl/zakelijk/",
+      "viewport": { "width": 426, "height": 932 },
+      "purpose": "Mega Zakelijk mobile homepage"
+    }
+  ],
+  "excludedUrls": [
+    "https://colive.es/",
+    "https://canatess.com/"
+  ]
+}

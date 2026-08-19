@@ -1,0 +1,41 @@
+{
+  "project": "CALCULADORA-IA",
+  "sourceUrl": "https://dzionix.com/demo-reformas/index.html",
+  "capturedAt": "2026-08-05T11:42:46.715Z",
+  "assets": [
+    {
+      "filename": "home-desktop.png",
+      "url": "https://dzionix.com/demo-reformas/index.html",
+      "viewport": {
+        "width": 1425,
+        "height": 891
+      },
+      "purpose": "Calculator landing and first-step overview",
+      "notes": "Requested desktop viewport 1440x900; browser capture area rendered at 1425x891. No data entered."
+    },
+    {
+      "filename": "home-mobile.png",
+      "url": "https://dzionix.com/demo-reformas/index.html",
+      "viewport": {
+        "width": 375,
+        "height": 811
+      },
+      "purpose": "Responsive calculator landing",
+      "notes": "Requested mobile viewport 390x844; browser capture area rendered at 375x811. No data entered."
+    },
+    {
+      "filename": "calculator-flow-step-3.png",
+      "url": "https://dzionix.com/demo-reformas/index.html",
+      "viewport": {
+        "width": 1425,
+        "height": 891
+      },
+      "purpose": "Representative interactive flow at finish-selection step",
+      "notes": "Requested desktop viewport 1440x900; browser capture area rendered at 1425x891. Local demo interaction only: Cocina, 50 m2, Estándar selected; no form submission or external data."
+    }
+  ],
+  "excludedUrls": [
+    "https://colive.es/",
+    "https://canatess.com/"
+  ]
+}

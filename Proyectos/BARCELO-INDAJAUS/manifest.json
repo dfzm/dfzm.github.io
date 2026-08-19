@@ -1,0 +1,11 @@
+{
+  "project": "BARCELO-INDAJAUS",
+  "sourceUrl": "https://barceloindajaus.com/",
+  "capturedAt": "2026-08-05T11:41:45.584Z",
+  "assets": [],
+  "excludedUrls": [
+    "https://colive.es/",
+    "https://canatess.com/"
+  ],
+  "unavailableReason": "Public homepage navigation timed out in the browser (ERR_CONNECTION_TIMED_OUT); no screenshot substituted or captured."
+}
