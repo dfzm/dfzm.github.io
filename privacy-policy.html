@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Política de privacidad de Pixel Color Picker, extensión de Chrome para identificar colores y extraer texto mediante OCR local."
+    />
+    <meta name="robots" content="index, follow" />
+    <title>Política de privacidad | Pixel Color Picker</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --paper: #f5f3ed;
+        --surface: #fffdf8;
+        --ink: #172033;
+        --muted: #5f697c;
+        --line: #d9d7cf;
+        --accent: #285fe8;
+        --accent-dark: #1740a9;
+        --warm: #ef8750;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        background: var(--paper);
+      }
+
+      body {
+        min-width: 320px;
+        margin: 0;
+        background:
+          radial-gradient(circle at 92% 8%, rgba(239, 135, 80, 0.14), transparent 22rem),
+          var(--paper);
+        color: var(--ink);
+        font-family: "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+        line-height: 1.65;
+      }
+
+      a {
+        color: var(--accent-dark);
+      }
+
+      .page {
+        width: min(100% - 2rem, 920px);
+        margin: 0 auto;
+        padding: 3rem 0 4rem;
+      }
+
+      .brand {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.75rem;
+        color: var(--accent-dark);
+        font-size: 0.95rem;
+        font-weight: 750;
+        letter-spacing: -0.02em;
+      }
+
+      .mark {
+        position: relative;
+        width: 2rem;
+        height: 2rem;
+        overflow: hidden;
+        border-radius: 0.6rem;
+        background: var(--accent);
+        box-shadow: 0 0.6rem 1.2rem rgba(40, 95, 232, 0.2);
+      }
+
+      .mark::before {
+        position: absolute;
+        top: 0.42rem;
+        left: 0.48rem;
+        width: 0.82rem;
+        height: 0.82rem;
+        border: 0.16rem solid #fff;
+        border-radius: 50%;
+        content: "";
+      }
+
+      .mark::after {
+        position: absolute;
+        right: 0.25rem;
+        bottom: 0.3rem;
+        width: 0.6rem;
+        height: 0.24rem;
+        border-radius: 999px;
+        background: #ff9953;
+        content: "";
+        transform: rotate(-42deg);
+        transform-origin: left center;
+      }
+
+      .hero {
+        margin-top: 3.5rem;
+        padding-bottom: 2rem;
+        border-bottom: 1px solid var(--line);
+      }
+
+      .eyebrow {
+        margin: 0 0 0.9rem;
+        color: var(--warm);
+        font-size: 0.75rem;
+        font-weight: 800;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+      }
+
+      h1,
+      h2 {
+        margin: 0;
+        color: var(--ink);
+        letter-spacing: -0.04em;
+      }
+
+      h1 {
+        max-width: 760px;
+        font-size: clamp(2.4rem, 7vw, 5rem);
+        line-height: 0.98;
+      }
+
+      .lead {
+        max-width: 660px;
+        margin: 1.5rem 0 0;
+        color: var(--muted);
+        font-size: clamp(1.05rem, 2vw, 1.25rem);
+      }
+
+      .updated {
+        margin: 1.25rem 0 0;
+        color: var(--muted);
+        font-size: 0.85rem;
+      }
+
+      .content {
+        display: grid;
+        gap: 2.5rem;
+        margin-top: 2.5rem;
+      }
+
+      section {
+        max-width: 760px;
+      }
+
+      h2 {
+        margin-bottom: 0.75rem;
+        font-size: clamp(1.35rem, 3vw, 1.8rem);
+        line-height: 1.15;
+      }
+
+      p {
+        margin: 0;
+        color: var(--muted);
+      }
+
+      p + p {
+        margin-top: 0.9rem;
+      }
+
+      .permission {
+        padding: 1rem 1.15rem;
+        border-left: 3px solid var(--accent);
+        background: rgba(255, 253, 248, 0.72);
+      }
+
+      .permission + .permission {
+        margin-top: 0.8rem;
+      }
+
+      .permission strong {
+        display: block;
+        margin-bottom: 0.2rem;
+        color: var(--ink);
+      }
+
+      .contact {
+        padding: 1.4rem;
+        border: 1px solid var(--line);
+        border-radius: 0.9rem;
+        background: var(--surface);
+      }
+
+      footer {
+        margin-top: 3.5rem;
+        padding-top: 1.25rem;
+        border-top: 1px solid var(--line);
+        color: var(--muted);
+        font-size: 0.85rem;
+      }
+
+      @media (max-width: 560px) {
+        .page {
+          padding-top: 1.5rem;
+        }
+
+        .hero {
+          margin-top: 2.5rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="page">
+      <div class="brand" aria-label="Pixel Color Picker">
+        <span class="mark" aria-hidden="true"></span>
+        <span>Pixel Color Picker</span>
+      </div>
+
+      <header class="hero">
+        <p class="eyebrow">Política de privacidad</p>
+        <h1>Información clara sobre tus datos.</h1>
+        <p class="lead">
+          Pixel Color Picker ayuda a identificar colores y extraer texto desde el contenido visible de Chrome. El procesamiento se realiza localmente en el navegador.
+        </p>
+        <p class="updated">Última actualización: 8 de septiembre de 2026</p>
+      </header>
+
+      <div class="content">
+        <section>
+          <h2>Responsable</h2>
+          <p>
+            Pixel Color Picker es mantenida por Daniel Felipe Zapata Martinez. Para consultas sobre privacidad, puedes escribir a <a href="mailto:danielzapatam93@gmail.com">danielzapatam93@gmail.com</a>.
+          </p>
+        </section>
+
+        <section>
+          <h2>Qué hace la extensión</h2>
+          <p>
+            Pixel Color Picker permite seleccionar un color visible en pantalla y copiar sus valores HEX y RGBA. También permite seleccionar una región visible de la pestaña activa para extraer el texto que contiene mediante reconocimiento óptico de caracteres, conocido como OCR.
+          </p>
+          <p>
+            Estas acciones se ejecutan únicamente después de que el usuario inicia de forma explícita el selector de color o la captura de texto. La extensión no monitoriza continuamente las páginas ni funciona como un proceso de vigilancia en segundo plano.
+          </p>
+        </section>
+
+        <section>
+          <h2>Información que se procesa</h2>
+          <p>
+            Cuando el usuario utiliza la función OCR, la extensión captura temporalmente la parte visible de la pestaña y recorta la región seleccionada. La imagen y el texto reconocido se procesan dentro del navegador mediante Tesseract.js y WebAssembly.
+          </p>
+          <p>
+            La extensión no envía las capturas, los colores ni el texto reconocido a servidores externos. Tampoco utiliza servicios de analítica, publicidad, perfiles de usuario, cuentas, API keys ni servicios de inteligencia artificial remotos en la versión actual.
+          </p>
+        </section>
+
+        <section>
+          <h2>Almacenamiento local</h2>
+          <p>
+            Pixel Color Picker puede guardar en el almacenamiento local de Chrome el último color seleccionado y las preferencias del OCR, como el idioma configurado. Esta información permanece en el dispositivo del usuario, no se sincroniza mediante un servidor propio y no se comparte con terceros.
+          </p>
+        </section>
+
+        <section>
+          <h2>Permisos utilizados</h2>
+          <div class="permission">
+            <strong>activeTab</strong>
+            Permite acceder temporalmente a la pestaña activa después de una acción del usuario para leer sus píxeles visibles y capturar la región seleccionada para OCR.
+          </div>
+          <div class="permission">
+            <strong>scripting</strong>
+            Permite inyectar temporalmente el selector rectangular y sus estilos en la pestaña activa cuando el usuario inicia la captura de texto.
+          </div>
+          <div class="permission">
+            <strong>offscreen</strong>
+            Permite ejecutar el recorte de la imagen y el procesamiento OCR en un documento fuera de pantalla, donde Tesseract.js puede utilizar canvas, workers y WebAssembly.
+          </div>
+          <div class="permission">
+            <strong>storage</strong>
+            Permite guardar localmente el último color seleccionado y las preferencias del OCR.
+          </div>
+        </section>
+
+        <section>
+          <h2>Código remoto y terceros</h2>
+          <p>
+            La extensión no carga ni ejecuta código remoto. Los archivos JavaScript, WebAssembly, workers y modelos de idioma necesarios para Tesseract.js se incluyen dentro del paquete de la extensión y se cargan desde el propio entorno de Chrome.
+          </p>
+          <p>
+            Pixel Color Picker no vende, alquila ni comparte información con terceros. Si una versión futura incorporara un servicio externo, esta política se actualizaría antes de introducir ese cambio.
+          </p>
+        </section>
+
+        <section>
+          <h2>Conservación y eliminación</h2>
+          <p>
+            No se conservan copias de las capturas ni del texto OCR en servidores externos. Para eliminar los datos guardados localmente, el usuario puede borrar los datos de la extensión desde la configuración de Chrome o desinstalar Pixel Color Picker.
+          </p>
+        </section>
+
+        <section>
+          <h2>Limitaciones</h2>
+          <p>
+            La captura OCR funciona sobre la parte visible de la pestaña y no sobre contenido desplazado fuera del viewport. Chrome puede impedir el acceso a páginas internas o protegidas, como chrome://, la Chrome Web Store y otras páginas del sistema. La precisión del OCR depende de la nitidez, el tamaño, el contraste y el estilo del texto seleccionado.
+          </p>
+        </section>
+
+        <section class="contact">
+          <h2>Contacto</h2>
+          <p>
+            Si tienes preguntas sobre esta política o sobre el tratamiento de datos de Pixel Color Picker, escribe a <a href="mailto:danielzapatam93@gmail.com">danielzapatam93@gmail.com</a>.
+          </p>
+        </section>
+      </div>
+
+      <footer>
+        Pixel Color Picker · Política de privacidad
+      </footer>
+    </main>
+  </body>
+</html>
