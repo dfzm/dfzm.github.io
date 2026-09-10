@@ -460,6 +460,7 @@ html[data-theme="dark"] .hero-noise { mix-blend-mode: screen; opacity: .08; }
 .project-tags { width: fit-content; padding: .35rem .55rem; border: 1px solid var(--ink); border-radius: 999px; font-size: .62rem; font-weight: 800; text-transform: uppercase; letter-spacing: .06em; }
 .project-card__button:hover .project-summary, .project-card__button:focus-within .project-summary { color: #171714; }
 .project-cover { position: relative; height: clamp(12rem, 22vw, 20rem); border: 2px solid #171714; overflow: hidden; transform: rotate(var(--cover-rotate, -1deg)); transition: transform .65s var(--ease-out); }
+.project-cover > img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center; }
 .project-card__button:hover .project-cover, .project-card__button:focus-within .project-cover { transform: rotate(0deg) scale(1.025); }
 .project-arrow { align-self: start; justify-self: end; min-height: 2.75rem; padding: .5rem .65rem .5rem .85rem; display: inline-flex; align-items: center; justify-content: center; gap: .6rem; border: 1px solid var(--ink); border-radius: 999px; background: transparent; color: inherit; cursor: pointer; font-size: .62rem; font-weight: 850; text-transform: uppercase; letter-spacing: .06em; white-space: nowrap; transition: transform .35s var(--ease-out), background-color .35s var(--ease-out), color .35s var(--ease-out); }
 .project-arrow b { font-size: 1.05rem; line-height: 1; transition: transform .35s var(--ease-out); }
@@ -475,7 +476,7 @@ html[data-theme="dark"] .hero-noise { mix-blend-mode: screen; opacity: .08; }
 .project-card--cms { --project-bg: #9db2d3; --cover-rotate: -.8deg; }
 .project-card--gastos { --project-bg: #ddd3aa; --cover-rotate: 1.4deg; }
 
-.cover-form { background: #f7eadf; color: #171714; padding: 12%; display: flex; flex-direction: column; justify-content: center; gap: 1.5rem; }
+.cover-form { background: #f7eadf; color: #171714; }
 .cover-label { font: 900 clamp(2rem, 4.2vw, 4.5rem)/1 var(--display); letter-spacing: -.06em; }
 .form-steps { display: grid; grid-template-columns: repeat(7, 1fr); gap: .35rem; }
 .form-steps i { height: .45rem; border: 1px solid #171714; background: #e7c9bc; }
@@ -519,7 +520,7 @@ html[data-theme="dark"] .hero-noise { mix-blend-mode: screen; opacity: .08; }
 .node-c { left: 10%; bottom: 11%; }.node-c::after { transform: rotate(-33deg); }
 .node-d { right: 10%; bottom: 11%; }.node-d::after { transform: rotate(213deg); }
 
-.cover-cms { background: #d9e4f4; color: #171714; display: grid; grid-template-columns: 22% 1fr; padding: 7%; gap: 5%; }
+.cover-cms { background: #d9e4f4; color: #171714; }
 .cms-sidebar, .cms-canvas { border: 2px solid #171714; background: #f3efe5; }
 .cms-sidebar { display: flex; flex-direction: column; gap: .65rem; padding: .75rem .45rem; }
 .cms-sidebar i { display: block; height: .35rem; background: #171714; }
@@ -675,6 +676,8 @@ html[data-theme="dark"] .hero-noise { mix-blend-mode: screen; opacity: .08; }
 .case-links { display: flex; flex-wrap: wrap; gap: .75rem; padding-top: 3rem; }
 .case-links a { min-height: 3rem; padding: .7rem .9rem; display: inline-flex; align-items: center; gap: 1rem; border: 1px solid var(--ink); text-decoration: none; text-transform: uppercase; font-size: .68rem; font-weight: 850; letter-spacing: .07em; }
 .case-links a:hover { background: var(--ink); color: var(--surface); }
+.case-links__download { background: var(--ink); color: var(--surface); }
+.case-links a.case-links__download:hover, .case-links a.case-links__download:focus-visible { background: var(--coral); color: #171714; }
 
 .case-media {
   padding: clamp(3rem, 6vw, 6rem) 0;
@@ -710,7 +713,7 @@ html[data-theme="dark"] .hero-noise { mix-blend-mode: screen; opacity: .08; }
 .case-media__grid--chain-pair > .case-media__item--featured { grid-column: 1 / -1; }
 .case-media__grid--mobile-grid { grid-template-columns: repeat(2, minmax(0, 24rem)); justify-content: center; }
 .case-media__item { min-width: 0; margin: 0; }
-.case-media[aria-label="Implementación pública · móvil"] .case-media__grid.case-media__grid--comparison .case-media__item{width: 80%;} 
+.case-media[aria-label="Implementación pública · móvil"] .case-media__grid.case-media__grid--comparison .case-media__item{width: 70%;}
 .case-media__item--portrait { width: min(100%, 24rem); justify-self: center; }
 .case-media__label { min-height: 2.75rem; padding: .65rem .75rem; display: flex; align-items: center; gap: .75rem; border: 1px solid var(--ink); border-bottom: 0; font-size: .64rem; font-weight: 850; letter-spacing: .08em; text-transform: uppercase; }
 .case-media__label b { color: var(--muted); font: inherit; }

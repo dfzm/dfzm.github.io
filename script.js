@@ -19,7 +19,7 @@ const PROJECTS = {
       ["Desarrollo e integración", "Implementé el formulario con Gravity Forms en WordPress y sustituí el proceso externo."]
     ],
     deliverables: ["Nueva estructura de 7 pasos", "Adaptación del cuestionario para perros y gatos", "Preguntas, textos y campos revisados", "Interfaz del formulario", "Formulario integrado en WordPress"],
-    technology: "UX/UI · WordPress · Gravity Forms",
+    technology: "UX/UI · Figma · WordPress · Gravity Forms",
     link: "https://canatess.com/consulta-nutricional",
     linkLabel: "Visitar consulta nutricional de Ca na Tess",
     mediaSections: [
@@ -330,11 +330,11 @@ const PROJECTS = {
     ]
   },
   "calculadora-ia": {
-    index: "05",
+    index: "08",
     title: "Calculadora de presupuestos con chatbot de IA",
     category: "Proyecto personal",
     status: "Demo pública",
-    role: "Diseño y desarrollo · Calculadora interactiva · Integración de IA",
+    role: "HTML · CSS · JavaScript · AppScript · Integración de IA",
     color: "#ffad4a",
     summary: "Construí una calculadora interactiva para estimar presupuestos de reformas e integré un chatbot con IA para acompañar al usuario durante el proceso.",
     challenge: "Quería construir una experiencia que no dependiera únicamente de un formulario tradicional. La calculadora organiza la información para estimar un presupuesto y el chatbot añade una capa conversacional durante el proceso.",
@@ -366,13 +366,13 @@ const PROJECTS = {
     ]
   },
   "crm-dz": {
-    index: "06",
+    index: "05",
     title: "CRM DZ",
-    category: "Proyecto personal",
-    status: "Publicado · desarrollo activo · objetivo: diciembre de 2026",
-    role: "Aplicación web full-stack · CRM multiagencia",
+    category: "Proyecto personal · Aplicación web full-stack",
+    status: "Publicado · desarrollo activo · proyección: Diciembre 2026",
+    role: "Next.js · React · TypeScript · Node.js · MySQL  ",
     color: "#9cb89a",
-    summary: "Desarrollo un CRM para centralizar clientes, sitios web, horas de mantenimiento, tickets y reportes dentro de un mismo espacio de trabajo. La primera versión funcional ya está publicada en crm.dzionix.com y recibe actualizaciones semanales mientras completo el producto, con previsión de terminarlo a finales de 2026.",
+    summary: "Desarrollé un CRM para centralizar clientes, sitios web, horas de mantenimiento, tickets y reportes dentro de un mismo espacio de trabajo. La primera versión funcional ya está publicada en crm.dzionix.com y recibe actualizaciones semanales mientras completo el producto, con previsión de terminarlo a finales de 2026.",
     challenge: "El reto era convertir una gestión repartida entre conversaciones, correos, documentos y herramientas separadas en un sistema con reglas claras, roles definidos y separación de datos entre agencias.",
     participation: "Me encargué del análisis del dominio, modelado de datos, arquitectura, frontend y backend, autenticación, permisos por rol, tickets y horas, reportes, notificaciones y documentación. La aplicación ya está publicada y la implementación continúa evolucionando con mejoras semanales en los flujos, el acabado visual y la preparación del producto.",
     process: [
@@ -411,14 +411,14 @@ const PROJECTS = {
     ]
   },
   "cms-propio": {
-    index: "07",
+    index: "06",
     title: "CMS AI DZ",
-    category: "Proyecto personal",
-    status: "En desarrollo · núcleo funcional",
-    startDate: "Enero de 2026",
-    role: "CMS personalizado · Editor basado en bloques · Integración de IA",
+    category: "Proyecto personal · Aplicación web full-stack",
+    status: "En desarrollo · núcleo y diseño funcional · proyección: Enero 2027",
+
+    role: "Next.js · React · TypeScript · Node.js · Integración de IA",
     color: "#9db2d3",
-    summary: "Desarrollo CMS DZ, un sistema en el que las páginas se crean principalmente desde un chat con IA y después se gestionan, revisan y publican desde el mismo panel.",
+    summary: "Desarrollé CMS AI DZ, un sistema en el que las páginas se crean principalmente desde un chat con IA y después se gestionan, revisan y publican desde el mismo panel.",
     challenge: "El reto era construir un CMS donde la creación de una página pudiera comenzar desde un chat sin perder control sobre la estructura, la calidad del contenido ni las reglas del sistema.",
     participation: "Me encargué del modelado de contenido, arquitectura, flujo conversacional, renderizado público, sistema de diseño, medios, formularios, flujo editorial, SEO, autenticación, permisos y documentación.",
     process: [
@@ -455,14 +455,14 @@ const PROJECTS = {
       }
     ]
   },
-  "mis-gastos-local": {
-    index: "08",
-    title: "Mis Gastos Local",
+  "movimoney": {
+    index: "07",
+    title: "MoviMoney",
     category: "Proyecto personal",
-    status: "En desarrollo · MVP local funcional · 2025",
-    role: "Aplicación Android local/offline-first",
+    status: "En desarrollo · Nucleo y diseño Funcional",
+    role: "React Native · Aplicación Android (arquitectura preparada para iOS)",
     color: "#ddd3aa",
-    summary: "Desarrollo Mis Gastos Local, una aplicación Android para registrar ingresos y gastos, consultar el saldo y revisar el historial sin depender de un backend.",
+    summary: "Desarrollé MoviMoney, una aplicación Android para registrar ingresos y gastos, consultar el saldo y revisar el historial sin depender de un backend.",
     challenge: "El reto era construir una primera versión útil sin backend: definir un modelo simple para ingresos y gastos, conservar los datos en el dispositivo y ofrecer un recorrido comprensible entre resumen, movimientos y categorías.",
     participation: "Desarrollo el proyecto de extremo a extremo dentro del alcance actual: definición del MVP, modelado de datos, navegación, pantallas, persistencia local y documentación del estado.",
     process: [
@@ -474,18 +474,21 @@ const PROJECTS = {
     ],
     deliverables: ["Acceso y sesión locales", "Navegación Drawer y Bottom Tabs", "Registro de ingresos y gastos", "Resumen de saldo y movimientos", "Historial con búsqueda y filtros", "Gestión de categorías", "Persistencia local y migración documentada"],
     technology: "Expo · React Native · TypeScript · AsyncStorage · expo-secure-store",
+    downloadUrl: "https://github.com/dfzm/dfzm.github.io/releases/latest/download/movimoney-1.0.0-arm64-v8a.apk",
+    downloadLabel: "Descargar la APK de MoviMoney",
     note: "Los datos se almacenan localmente en el dispositivo. No es un producto financiero listo para producción y no incluye backend ni sincronización.",
     mediaSections: [
       {
         placement: "afterProcess",
-        heading: "Storyboard móvil",
-        intro: "Secuencia de pantallas prevista para explicar el MVP. Todas las futuras capturas deben mostrar únicamente datos de demostración.",
+        heading: "Pantallas funcionales del MVP",
+        intro: "La primera versión de MoviMoney concentra el recorrido en cinco vistas: resumen, alta rápida de movimientos, historial, filtros avanzados y configuración local.",
         layout: "mobile-grid",
         items: [
-          { type: "placeholder", aspect: "9 / 19.5", label: "01 · Saldo", caption: "Resumen con datos de demostración únicamente." },
-          { type: "placeholder", aspect: "9 / 19.5", label: "02 · Añadir movimiento", caption: "Registro de ejemplo con datos de demostración únicamente." },
-          { type: "placeholder", aspect: "9 / 19.5", label: "03 · Historial y filtros", caption: "Búsqueda de ejemplo con datos de demostración únicamente." },
-          { type: "placeholder", aspect: "9 / 19.5", label: "04 · Categorías", caption: "Organización de ejemplo con datos de demostración únicamente." }
+          { type: "image", src: "Proyectos/MoviMoney/MoviMoney 1 (1).jpg", width: 1280, height: 2772, alt: "Pantalla de inicio de MoviMoney con saldo, resumen de ingresos y gastos y movimientos recientes", label: "Resumen y movimientos recientes", caption: "La pantalla de inicio reúne el saldo, el balance del periodo y los movimientos recientes en una sola vista.", expandable: true },
+          { type: "image", src: "Proyectos/MoviMoney/MoviMoney 1 (2).jpg", width: 1280, height: 2772, alt: "Menú de acciones rápidas de MoviMoney para registrar un gasto o un ingreso", label: "Alta rápida de movimientos", caption: "El botón de acción rápida separa el registro de gastos e ingresos para reducir fricción al cargar un movimiento.", expandable: true },
+          { type: "image", src: "Proyectos/MoviMoney/MoviMoney 1 (3).jpg", width: 1280, height: 2772, alt: "Historial de MoviMoney con buscador, filtros por tipo y movimientos agrupados por fecha", label: "Historial y búsqueda", caption: "El historial permite localizar movimientos y revisar el balance agrupado por periodos.", expandable: true },
+          { type: "image", src: "Proyectos/MoviMoney/MoviMoney 1 (4).jpg", width: 1280, height: 2772, alt: "Panel de filtros avanzados de MoviMoney con categorías y rango de fechas", label: "Filtros avanzados", caption: "Los filtros por categoría y rango de fechas acotan la consulta sin sacar al usuario del historial.", expandable: true },
+          { type: "image", src: "Proyectos/MoviMoney/MoviMoney 1 (5).jpg", width: 1280, height: 2772, alt: "Pantalla de ajustes de MoviMoney con cuenta, seguridad y configuración del saldo inicial", label: "Configuración local", caption: "Los ajustes concentran la cuenta local, la seguridad de acceso y el reajuste del saldo inicial.", expandable: true }
         ]
       }
     ]
@@ -889,12 +892,21 @@ function createProjectMarkup(project) {
   ` : "";
 
   const safeProjectLink = getSafeURL(project.link);
-  const links = safeProjectLink ? `
-    <div class="case-links">
-      <a href="${escapeHTML(safeProjectLink)}" target="_blank" rel="noopener noreferrer" aria-label="${escapeHTML(project.linkLabel)} (se abre en una pestaña nueva)">
-        ${escapeHTML(project.linkLabel)} <span aria-hidden="true">↗</span>
-      </a>
-    </div>
+  const projectLink = safeProjectLink ? `
+    <a href="${escapeHTML(safeProjectLink)}" target="_blank" rel="noopener noreferrer" aria-label="${escapeHTML(project.linkLabel)} (se abre en una pestaña nueva)">
+      ${escapeHTML(project.linkLabel)} <span aria-hidden="true">↗</span>
+    </a>
+  ` : "";
+
+  const safeDownloadLink = getSafeURL(project.downloadUrl);
+  const downloadLink = safeDownloadLink ? `
+    <a class="case-links__download" href="${escapeHTML(safeDownloadLink)}" target="_blank" rel="noopener noreferrer" download aria-label="${escapeHTML(project.downloadLabel || "Descargar la APK")} (se abre en una pestaña nueva)">
+      ${escapeHTML(project.downloadLabel || "Descargar la APK")} <span aria-hidden="true">↓</span>
+    </a>
+  ` : "";
+
+  const links = safeProjectLink || safeDownloadLink ? `
+    <div class="case-links">${projectLink}${downloadLink}</div>
   ` : "";
 
   const note = project.note ? `
