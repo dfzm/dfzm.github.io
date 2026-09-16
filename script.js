@@ -354,13 +354,13 @@ const PROJECTS = {
       {
         placement: "afterProcess",
         heading: "Recorrido de la experiencia",
-        intro: "Capturas de la demo pública para explicar el inicio responsive y un estado del flujo interactivo. La interacción mostrada es local y no envía formularios ni datos externos.",
+        intro: "Capturas de la demo pública para explicar el inicio responsive, un estado del flujo interactivo y la asistencia conversacional en móvil. La interacción mostrada es local y no envía formularios ni datos externos.",
         layout: "asymmetric",
         items: [
           { type: "image", src: "Proyectos/CALCULADORA-IA/home-desktop.png", width: 1425, height: 891, alt: "Pantalla inicial de la calculadora pública de reformas en escritorio", label: "Landing pública · escritorio", caption: "Vista inicial de la demo pública en escritorio, sin datos introducidos.", expandable: true },
-          { type: "image", src: "Proyectos/CALCULADORA-IA/home-mobile.png", width: 375, height: 811, alt: "Pantalla inicial de la calculadora pública de reformas adaptada a móvil", label: "Landing pública · móvil", caption: "Adaptación responsive de la pantalla inicial en móvil.", expandable: true },
           { type: "image", src: "Proyectos/CALCULADORA-IA/calculator-flow-step-3.png", width: 1425, height: 891, alt: "Paso de selección de acabado en la calculadora pública de reformas", label: "Flujo interactivo · paso 3", caption: "Estado de demo local con Cocina, 50 m² y acabado Estándar seleccionados; no se realizó ningún envío.", expandable: true },
-          { type: "placeholder", aspect: "9 / 16", label: "Chatbot · móvil", caption: "Captura móvil pendiente de la asistencia conversacional integrada; mantener únicamente datos de demostración y sin envío externo." }
+          { type: "image", src: "Proyectos/CALCULADORA-IA/home-mobile.png", width: 375, height: 811, alt: "Chatbot de reformas abierto en la pantalla inicial de la calculadora móvil", label: "Chatbot · móvil · inicio", caption: "Estado inicial del asistente en móvil, integrado en la pantalla de entrada y listo para iniciar la conversación.", expandable: true },
+          { type: "image", src: "Proyectos/CALCULADORA-IA/home-movil.png", width: 487, height: 922, alt: "Chatbot de reformas conversando en la calculadora adaptada a móvil", label: "Chatbot · móvil · conversación", caption: "Conversación guiada en móvil con una respuesta contextual sobre metros cuadrados y acabados; solo datos de demostración.", expandable: true }
         ]
       }
     ]
