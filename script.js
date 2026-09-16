@@ -474,7 +474,7 @@ const PROJECTS = {
     ],
     deliverables: ["Acceso y sesión locales", "Navegación Drawer y Bottom Tabs", "Registro de ingresos y gastos", "Resumen de saldo y movimientos", "Historial con búsqueda y filtros", "Gestión de categorías", "Persistencia local y migración documentada"],
     technology: "Expo · React Native · TypeScript · AsyncStorage · expo-secure-store",
-    downloadUrl: "https://github.com/dfzm/dfzm.github.io/releases/latest/download/movimoney-1.0.0-arm64-v8a.apk",
+    downloadUrl: "https://github.com/dfzm/dfzm.github.io/releases/latest/download/movimoney-1.0.1-arm64-v8a.apk",
     downloadLabel: "Descargar la APK de MoviMoney",
     note: "Los datos se almacenan localmente en el dispositivo. No es un producto financiero listo para producción y no incluye backend ni sincronización.",
     mediaSections: [
