@@ -1,0 +1,370 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="description" content="Política de privacidad de MoviMoney: datos locales, credenciales, copias de seguridad y eliminación.">
+  <title>Política de privacidad | MoviMoney</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #17212b;
+      --muted: #495866;
+      --paper: #ffffff;
+      --page: #f2f6f8;
+      --accent: #075d53;
+      --border: #cbd6dc;
+      --focus: #a33b00;
+      font: 1rem/1.65 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--ink);
+      background: var(--page);
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      min-width: 320px;
+      margin: 0;
+      background: var(--page);
+      color: var(--ink);
+      font: inherit;
+    }
+
+    a {
+      color: var(--accent);
+      text-underline-offset: 0.18em;
+      overflow-wrap: anywhere;
+    }
+
+    a:hover {
+      color: #03473f;
+    }
+
+    a:focus-visible {
+      outline: 3px solid var(--focus);
+      outline-offset: 3px;
+      border-radius: 2px;
+    }
+
+    .skip-link {
+      position: absolute;
+      inset-block-start: 0.75rem;
+      inset-inline-start: 0.75rem;
+      z-index: 1;
+      padding: 0.65rem 0.9rem;
+      transform: translateY(-180%);
+      border: 2px solid var(--focus);
+      border-radius: 0.4rem;
+      background: var(--paper);
+      color: var(--ink);
+      font-weight: 700;
+    }
+
+    .skip-link:focus {
+      transform: translateY(0);
+    }
+
+    header {
+      padding: clamp(2rem, 7vw, 3.5rem) 1.25rem 2rem;
+      background: #e3efed;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .header-inner,
+    main,
+    footer {
+      width: min(100% - 2rem, 48rem);
+      margin-inline: auto;
+    }
+
+    .brand {
+      margin: 0 0 0.5rem;
+      color: var(--accent);
+      font-size: 0.95rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+    }
+
+    h1,
+    h2 {
+      line-height: 1.25;
+      text-wrap: balance;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(1.8rem, 5vw, 2.5rem);
+    }
+
+    .intro {
+      max-width: 65ch;
+      margin: 0.8rem 0 0;
+      color: var(--muted);
+    }
+
+    main {
+      padding-block: 1.5rem 3rem;
+    }
+
+    article {
+      padding: clamp(1rem, 4vw, 2rem);
+      background: var(--paper);
+      border: 1px solid var(--border);
+      border-radius: 0.75rem;
+      box-shadow: 0 0.25rem 1rem rgb(23 33 43 / 6%);
+    }
+
+    section + section {
+      margin-top: 2rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border);
+    }
+
+    h2 {
+      margin: 0 0 0.7rem;
+      font-size: 1.3rem;
+    }
+
+    p {
+      margin: 0.65rem 0;
+    }
+
+    ul {
+      padding-inline-start: 1.4rem;
+    }
+
+    li + li {
+      margin-top: 0.5rem;
+    }
+
+    .notice {
+      padding: 0.9rem 1rem;
+      background: #f1f6f5;
+      border-inline-start: 4px solid var(--accent);
+      border-radius: 0.25rem;
+    }
+
+    footer {
+      padding: 0 0 2rem;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 24rem) {
+      article {
+        border-radius: 0.5rem;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <header>
+    <div class="header-inner">
+      <p class="brand">MoviMoney</p>
+      <h1>Política de privacidad</h1>
+      <p class="intro">
+        Esta política explica qué información maneja MoviMoney y cómo se guarda,
+        exporta y elimina en las funciones actuales de la aplicación.
+      </p>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <article>
+      <section aria-labelledby="identificacion">
+        <h2 id="identificacion">Identificación de la aplicación</h2>
+        <p>
+          Esta política corresponde a MoviMoney, aplicación para Android con el
+          identificador <code>com.dzionix.misgastoslocal</code>.
+        </p>
+        <p>
+          Última actualización:
+          <time datetime="2026-09-27">27 de septiembre de 2026</time>.
+        </p>
+        <p>
+          Para consultas sobre privacidad, escribe a
+          <a href="mailto:danielzapatam93@gmail.com">danielzapatam93@gmail.com</a>.
+        </p>
+      </section>
+
+      <section aria-labelledby="datos">
+        <h2 id="datos">Información que se guarda en el dispositivo</h2>
+        <p>
+          MoviMoney guarda localmente en el teléfono los datos financieros y de
+          configuración necesarios para las funciones que utilizas. Según esos
+          usos, pueden incluir:
+        </p>
+        <ul>
+          <li>
+            <strong>Movimientos:</strong> identificador, tipo (ingreso, gasto o
+            traspaso), importe, categoría, descripción, fecha y fecha de
+            creación. Según el movimiento, también puede incluir estado,
+            modalidad y fecha de confirmación, fecha de actualización, cartera
+            asociada y etiquetas.
+          </li>
+          <li>
+            <strong>Categorías:</strong> identificador, nombre, tipo, icono,
+            color, orden, indicador de si es del sistema y fechas de creación o
+            actualización.
+          </li>
+          <li>
+            <strong>Presupuestos:</strong> categoría asociada, importe, período
+            y umbral de alerta.
+          </li>
+          <li>
+            <strong>Carteras:</strong> nombre, tipo, color, icono, saldo inicial,
+            indicador de cartera predeterminada, estado y orden.
+          </li>
+          <li>
+            <strong>Metas de ahorro:</strong> nombre, importe objetivo, fecha
+            objetivo opcional, icono, color y estado.
+          </li>
+          <li>
+            <strong>Aportes de ahorro:</strong> importe, fecha, nota opcional y,
+            cuando corresponde, referencia al movimiento de origen.
+          </li>
+        </ul>
+        <p>
+          Para el acceso local, la aplicación puede guardar el nombre de usuario
+          y datos de sesión, como su estado y la fecha del último inicio de
+          sesión. El contenido de descripciones y notas depende de lo que
+          escribas; evita incluir información que no quieras guardar en el
+          dispositivo o en una copia que puedas compartir.
+        </p>
+      </section>
+
+      <section aria-labelledby="acceso">
+        <h2 id="acceso">Acceso local y credenciales</h2>
+        <p>
+          La autenticación actual es local: no requiere iniciar sesión con una
+          cuenta de Google ni con una cuenta de MoviMoney en la nube. Los datos
+          financieros y de la aplicación se guardan localmente mediante
+          AsyncStorage.
+        </p>
+        <p>
+          En el formato actual, la aplicación guarda un verificador de contraseña
+          calculado con scrypt y una sal aleatoria, no la contraseña original.
+          Las credenciales y los datos de sesión se guardan mediante Expo
+          SecureStore cuando está disponible; si no, la aplicación usa
+          AsyncStorage como alternativa.
+        </p>
+        <p class="notice">
+          Algunas instalaciones con credenciales heredadas aún no migradas
+          pueden conservar la contraseña original como texto en el registro
+          local. Después de un inicio de sesión válido, la aplicación reemplaza
+          ese registro por el verificador actual con scrypt y sal aleatoria.
+        </p>
+        <p>
+          El uso de SecureStore para las credenciales no significa que los datos
+          financieros estén cifrados. No afirmamos que la información financiera
+          almacenada localmente esté cifrada.
+        </p>
+      </section>
+
+      <section aria-labelledby="copias">
+        <h2 id="copias">Copias de seguridad y exportación</h2>
+        <p>
+          La exportación genera un archivo JSON que incluye datos financieros y
+          categorías, junto con metadatos como la versión de la copia, la fecha
+          de exportación y la versión de la aplicación. No incluye el nombre de
+          usuario, la contraseña ni los datos de sesión. El archivo JSON
+          exportado <strong>no está cifrado</strong>.
+        </p>
+        <p>
+          El archivo se prepara en la caché de la aplicación y se ofrece mediante
+          el menú para compartir del sistema operativo. Tú eliges el destino; la
+          privacidad y conservación posteriores dependen del servicio o
+          aplicación que selecciones, no de MoviMoney.
+        </p>
+        <p>
+          Al importar y restaurar un archivo JSON, la aplicación crea primero una
+          copia local de seguridad y después restaura los datos. También puede
+          crear copias locales para recuperación.
+        </p>
+        <p>
+          En los flujos revisados no se encontró que MoviMoney elimine
+          automáticamente el archivo exportado de la caché; no se verificó
+          cuándo Android limpia los archivos de caché.
+        </p>
+      </section>
+
+      <section aria-labelledby="conservacion">
+        <h2 id="conservacion">Conservación y eliminación</h2>
+        <p>
+          En los flujos revisados no se encontró una caducidad automática para
+          las copias locales de recuperación o restauración, ni una opción de la
+          aplicación para eliminarlas en conjunto. Tampoco se encontró una
+          opción para borrar todos los datos financieros de una sola vez.
+        </p>
+        <p>
+          La aplicación permite eliminar elementos concretos, como movimientos,
+          metas de ahorro y aportes. También se pueden eliminar categorías; si
+          una categoría está en uso, primero hay que reasignar los elementos que
+          la utilizan. Eliminar una meta de ahorro también elimina sus aportes.
+        </p>
+        <p>
+          Una cartera se puede eliminar individualmente solo si no tiene
+          movimientos asociados, su saldo inicial y su saldo calculado son cero,
+          no es la predeterminada y no es la única cartera activa. Eliminar una
+          cartera no elimina movimientos. También se puede archivar una cartera:
+          el archivo conserva sus datos y su saldo.
+        </p>
+        <p>
+          Restablecer el acceso local elimina las credenciales y la sesión, pero
+          <strong>no elimina los datos financieros ni las copias locales</strong>.
+          Esos datos siguen en el dispositivo después del restablecimiento.
+        </p>
+        <p>
+          No se verificó el plazo de limpieza de la caché por Android u otro
+          componente del sistema operativo.
+        </p>
+      </section>
+
+      <section aria-labelledby="envios">
+        <h2 id="envios">Sincronización y servicios de terceros</h2>
+        <p>
+          La sincronización con Google Sheets no está implementada y no se ofrece
+          actualmente. En los flujos y dependencias/configuraciones revisados no
+          se identificaron envíos automáticos de datos financieros a terceros
+          ni SDK directos de analítica o publicidad.
+        </p>
+        <p>
+          Esta descripción se limita a la aplicación y a los flujos examinados.
+          No incluye el tratamiento posterior por servicios externos que elijas
+          al compartir un archivo.
+        </p>
+      </section>
+
+      <section aria-labelledby="contacto">
+        <h2 id="contacto">Contacto de privacidad</h2>
+        <p>
+          Para consultas sobre esta política o el tratamiento de información en
+          MoviMoney, escribe a
+          <a href="mailto:danielzapatam93@gmail.com">danielzapatam93@gmail.com</a>.
+        </p>
+      </section>
+    </article>
+  </main>
+
+  <footer>
+    <p>MoviMoney · Política de privacidad</p>
+  </footer>
+</body>
+</html>
