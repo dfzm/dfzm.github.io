@@ -258,8 +258,8 @@ const PROJECTS = {
         intro: "El encargo reunía dos experiencias dentro de la misma instalación de WordPress: Mega para clientes particulares y Mega Zakelijk para empresas. Implementé ambas a partir de dos diseños distintos en Figma, manteniendo sus componentes, navegación y responsive diferenciados dentro de una única instalación editable.",
         layout: "full",
         items: [
-          { type: "image", src: "Proyectos/MEGA/Figma 1.png", width: 1795, height: 835, alt: "Diseño de Figma para la experiencia de Mega Particulares", label: "Figma · Mega · Particulares", caption: "Dirección visual y estructura de la experiencia para clientes particulares. Diseño realizado por el equipo de Selva Digital.", expandable: true },
-          { type: "image", src: "Proyectos/MEGA/Figma 2.png", width: 1435, height: 930, alt: "Diseño de Figma para la experiencia de Mega Zakelijk", label: "Figma · Mega Zakelijk · Empresas", caption: "Diseño diferenciado para la experiencia dirigida a empresas. Cada propuesta se implementó dentro del mismo WordPress, con sus propios componentes y navegación. Diseño realizado por el equipo de Selva Digital.", expandable: true }
+          { type: "image", aspect: "16 / 9", alt: "Marcador temporal para las referencias visuales de Mega", label: "Muestra visual temporal · Mega", caption: "Las imágenes de referencia de Figma se han ocultado temporalmente. El diseño original fue realizado por el equipo de Selva Digital." },
+                    // Referencia de Figma oculta temporalmente.
         ]
       },
       {
@@ -634,9 +634,9 @@ const PROJECTS = {
         intro: "El encargo reunía dos marcas dentro del mismo grupo: Barentszen y Barentszen Group, cada una con su propia dirección visual.",
         layout: "lead-split",
         items: [
-          { type: "image", src: "Proyectos Secundarios/Barentszen - B. Group/Figma Barentszen y B Group.png", width: 1898, height: 1023, alt: "Vista conjunta en Figma de las dos marcas del grupo: Barentszen y Barentszen Group", label: "Figma · el conjunto", caption: "La vista de conjunto muestra las dos identidades dentro del mismo sistema visual. Diseño realizado por el equipo de Selva Digital.", expandable: true, featured: true },
-          { type: "image", src: "Proyectos Secundarios/Barentszen - B. Group/Figma Barentszen 1.png", width: 1902, height: 1028, alt: "Diseño en Figma del sitio de Barentszen", label: "Figma · Barentszen", caption: "Dirección visual y estructura del sitio de Barentszen. Diseño realizado por el equipo de Selva Digital.", expandable: true },
-          { type: "image", src: "Proyectos Secundarios/Barentszen - B. Group/Figma Barentszen Group 1.png", width: 1908, height: 1026, alt: "Diseño en Figma del sitio de Barentszen Group", label: "Figma · Barentszen Group", caption: "Dirección visual y estructura del sitio de Barentszen Group. Diseño realizado por el equipo de Selva Digital.", expandable: true }
+          { type: "image", aspect: "16 / 9", alt: "Marcador temporal para las referencias visuales de Barentszen", label: "Muestra visual temporal · Barentszen", caption: "Las imágenes de referencia de Figma se han ocultado temporalmente. El diseño original fue realizado por el equipo de Selva Digital.", },
+// Referencia de Figma oculta temporalmente.
+// Referencia de Figma oculta temporalmente.
         ]
       },
       {
@@ -645,8 +645,8 @@ const PROJECTS = {
         intro: "Vistas adicionales de los diseños que completan la referencia antes de la implementación.",
         layout: "full",
         items: [
-          { type: "image", src: "Proyectos Secundarios/Barentszen - B. Group/Figma Barentszen 2.png", width: 1905, height: 1012, alt: "Segunda vista del diseño en Figma de Barentszen", label: "Figma · Barentszen · detalle", caption: "Vista complementaria del diseño de Barentszen. Diseño realizado por el equipo de Selva Digital.", expandable: true },
-          { type: "image", src: "Proyectos Secundarios/Barentszen - B. Group/Figma Barentszen Group 2.png", width: 1887, height: 843, alt: "Segunda vista del diseño en Figma de Barentszen Group", label: "Figma · Barentszen Group · detalle", caption: "Vista complementaria del diseño de Barentszen Group. Diseño realizado por el equipo de Selva Digital.", expandable: true }
+          { type: "image", aspect: "16 / 9", alt: "Marcador temporal para las referencias visuales de Barentszen", label: "Muestra visual temporal · Barentszen", caption: "Las imágenes de referencia de Figma se han ocultado temporalmente. El diseño original fue realizado por el equipo de Selva Digital.", },
+// Referencia de Figma oculta temporalmente.
         ]
       },
       {
