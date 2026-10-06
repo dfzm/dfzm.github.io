@@ -570,6 +570,15 @@ html[data-theme="dark"] .hero-noise { mix-blend-mode: screen; opacity: .08; }
 .timeline span { padding: .75rem 0; display: flex; gap: 1rem; border-bottom: 1px solid var(--ink); font-size: .72rem; text-transform: uppercase; letter-spacing: .05em; }
 .timeline b { min-width: 7.5rem; }
 
+.about-education { margin-top: clamp(3rem, 5vw, 4.5rem); }
+.about-education > h3 { margin: 0 0 1.25rem; font: 850 clamp(1.5rem, 2.4vw, 2.1rem)/1 var(--display); letter-spacing: -.04em; text-transform: uppercase; }
+.education-list { margin: 0; padding: 0; list-style: none; border-top: 1px solid var(--line); }
+.education-list__item { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 1rem; align-items: center; padding: 1rem 0; border-bottom: 1px solid var(--line); }
+.education-list__details { min-width: 0; }
+.education-list__institution { margin: 0 0 .25rem; color: var(--muted); font-size: .82rem; line-height: 1.4; overflow-wrap: break-word; }
+.education-list__details h4 { margin: 0; font: 750 clamp(1rem, 1.3vw, 1.125rem)/1.35 var(--body); }
+.education-list__status { flex-shrink: 0; padding: .25rem .5rem; border: 1px solid var(--line); font-size: .68rem; font-weight: 800; letter-spacing: .05em; text-transform: uppercase; }
+
 .ai-section { overflow: hidden; }
 .ai-console { position: relative; padding: clamp(1rem, 2.5vw, 2.5rem); border: 2px solid var(--ink); background: var(--yellow); color: var(--yellow-ink); box-shadow: 1rem 1rem 0 var(--ink); transform-style: preserve-3d; }
 .ai-console__top, .ai-console__bottom { display: flex; justify-content: space-between; gap: 1rem; font: 700 .6rem/1.2 monospace; letter-spacing: .06em; }
