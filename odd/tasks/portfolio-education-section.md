@@ -42,7 +42,7 @@ The About copy mentions the multimedia-to-software career path, but does not ide
 ## Progress
 - [x] EDU-1: Add the accessible compact education/course block, focused structural test, and responsive styling.
 - [x] EDU-2: Run the exact test command, inspect the diff, and record verification evidence.
-- [ ] EDU-3: Create the required conventional work-unit commit and record its identity.
+- [x] EDU-3: Create the required conventional work-unit commit and record its identity.
 
 ## Verification Evidence
 - RED: `C:\Users\danie\.cache\codex-runtimes\codex-primary-runtime\dependencies\node\bin\node.exe --test tests/education-section.test.js` failed as expected because the education block was not yet present.
@@ -50,6 +50,7 @@ The About copy mentions the multimedia-to-software career path, but does not ide
 - `git diff --check`: passed (exit code 0).
 - Visual smoke check: unavailable. The local `file://` preview was blocked by the browser URL policy (only HTTP/HTTPS allowed); no workaround was attempted.
 - The responsive block uses the existing theme-aware `--line`, `--muted`, and `--ink` variables; both themes were not visually verified.
+- Work-unit commit: `2471bef235eaa4c8900e5289984b7d5ec3112563` (`feat(portfolio): add compact education credentials`).
 
 ## Next Step
-Create the authorized work-unit commit with message `feat(portfolio): add compact education credentials`, then record its commit identity here and in the Engram mirror.
+Implementation and verification are complete. Do not push or create a PR; no remote action is authorized.
