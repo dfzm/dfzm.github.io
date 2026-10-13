@@ -122,3 +122,4 @@ Implementation and verification are complete. Do not push or create a PR; no rem
 - Preserve approved labels DISEÑO, DESARROLLO and SOPORTE. Updated the design-copy test selector from the previous label; its content checks remain unchanged.
 - RED: full suite 5/6; outdated DISEÑAR selector returned null after approved label change.
 - Engram mirror pending because runtime session registration is unavailable.
+- Publication GREEN: all6 Node tests and JavaScript syntax check passed. Integrated origin/main privacy policy, resolved three equivalent placeholder conflicts preserving local distinct Barentszen Group label. No remote content discarded.
