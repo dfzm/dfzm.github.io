@@ -81,3 +81,4 @@ Implementation and verification are complete. Do not push or create a PR; no rem
 - Visual checks: 1440/900/360px, light/dark; screenshots inspected, image loads, no overflow; desktop portrait/adjacent copy ratio 65/35, mobile stacked.
 - Academic text preserved byte-for-byte from current local index.html; unrelated sections unchanged.
 - Selected proposal 2 now implemented in actual website. No new competencies section, no subagents, no push.
+- EDU-5 work-unit commit: `fd67ad4d3187540b9b1293d1aff509b8d4e30957`.
