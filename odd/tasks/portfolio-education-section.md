@@ -105,3 +105,4 @@ Implementation and verification are complete. Do not push or create a PR; no rem
 - Custom SVG/text/button background removed. Image is inside safe Google Play hyperlink with alt and accessible new-tab label.
 - RED observed before image replacement; GREEN2/2; node --check and diffcheck passed. Chrome1440/360 real dialog: local image loads, correct link, no SVG/download attribute; screenshot inspected.
 - No push; user edits to index.html untouched.
+- STORE-2 work-unit commit: `d879fd5`.
