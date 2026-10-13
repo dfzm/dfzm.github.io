@@ -43,3 +43,13 @@ test("About presents five accessible education and course entries without overst
   assert.match(entries[4], /Desarrollo Front-End/);
   assert.match(entries[4], /Coursera/);
 });
+
+
+test("About uses the approved magazine composition and 65/35 portrait split", () => {
+  assert.match(html, /class="about-heading/);
+  assert.match(html, /class="about-opening/);
+  assert.match(html, /class="about-lower/);
+  assert.match(html, /class="about-profile/);
+  const css = readFileSync(path.join(__dirname, "..", "styles.css"), "utf8");
+  assert.match(css, /grid-template-columns: minmax\(0, 65fr\) minmax\(0, 35fr\)/);
+});

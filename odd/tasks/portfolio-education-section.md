@@ -54,3 +54,16 @@ The About copy mentions the multimedia-to-software career path, but does not ide
 
 ## Next Step
 Implementation and verification are complete. Do not push or create a PR; no remote action is authorized.
+
+
+## Approved Layout Revision
+- User approved magazine proposal 3 for implementation in the actual website, not only the preview.
+- Preserve all text; portrait/adjacent career timeline split is 65/35 after gap.
+- Route: direct inline at explicit user request; no subagents.
+- [x] EDU-4: Integrate approved layout and verify content, responsive light/dark rendering, and 65/35 ratio.
+- RED observed: approved layout test failed before production changes (1 existing pass, 1 new fail).
+
+- GREEN: both Node tests passed; git diff --check passed.
+- Exact original About text nodes preserved, verified before/after.
+- Chrome local browser check: 1440px and 360px, light/dark themes; portrait loads, 65/35 ratio, no horizontal overflow.
+- Approved revision applied directly to index.html/styles.css; no push.
