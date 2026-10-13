@@ -473,8 +473,7 @@ const PROJECTS = {
     ],
     deliverables: ["Acceso y sesión locales", "Navegación Drawer y Bottom Tabs", "Registro de ingresos y gastos", "Resumen de saldo y movimientos", "Historial con búsqueda y filtros", "Gestión de categorías", "Persistencia local y migración documentada"],
     technology: "Expo · React Native · TypeScript · AsyncStorage · expo-secure-store",
-    downloadUrl: "https://github.com/dfzm/dfzm.github.io/releases/latest/download/movimoney-1.0.2-arm64-v8a.apk",
-    downloadLabel: "Descargar la APK de MoviMoney",
+    playStoreUrl: "https://play.google.com/store/apps/details?id=com.dzionix.misgastoslocal&hl=es",
     note: "Los datos se almacenan localmente en el dispositivo. No es un producto financiero listo para producción y no incluye backend ni sincronización.",
     mediaSections: [
       {
@@ -905,8 +904,21 @@ function createProjectMarkup(project) {
     </a>
   ` : "";
 
-  const links = safeProjectLink || safeDownloadLink ? `
-    <div class="case-links">${projectLink}${downloadLink}</div>
+  const safeStoreLink = getSafeURL(project.playStoreUrl);
+  const storeLink = safeStoreLink ? `
+    <a class="case-links__store" href="${escapeHTML(safeStoreLink)}" target="_blank" rel="noopener noreferrer" aria-label="Ver MoviMoney en Google Play (se abre en una pestaña nueva)">
+      <svg width="24" height="26" viewBox="0 0 28 28" aria-hidden="true" focusable="false">
+        <path fill="#4285f4" d="M3 2 15 14 3 26Z"/>
+        <path fill="#34a853" d="M3 2 20 11.6 15 14Z"/>
+        <path fill="#fbbc04" d="m20 11.6 4.2 2.4-4.2 2.4L17.5 14Z"/>
+        <path fill="#ea4335" d="M3 26 15 14l5 2.4Z"/>
+      </svg>
+      Ver en Google Play <span aria-hidden="true">↗</span>
+    </a>
+  ` : "";
+
+  const links = safeProjectLink || safeDownloadLink || safeStoreLink ? `
+    <div class="case-links">${projectLink}${downloadLink}${storeLink}</div>
   ` : "";
 
   const note = project.note ? `

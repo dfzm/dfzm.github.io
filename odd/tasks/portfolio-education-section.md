@@ -82,3 +82,14 @@ Implementation and verification are complete. Do not push or create a PR; no rem
 - Academic text preserved byte-for-byte from current local index.html; unrelated sections unchanged.
 - Selected proposal 2 now implemented in actual website. No new competencies section, no subagents, no push.
 - EDU-5 work-unit commit: `fd67ad4d3187540b9b1293d1aff509b8d4e30957`.
+
+
+## MoviMoney Store Link
+- User paused GitHub publication and requested replacing the APK button with Google Play access and logo.
+- Google Play listing verified as MoviMoney by Daniel Felipe Zapata Martinez; package com.dzionix.misgastoslocal.
+- No subagents, no push; preserve existing index.html edits.
+- [x] STORE-1: Replace MoviMoney APK action with accessible Google Play action, and verify dialog behavior.
+
+- STORE-1 RED observed before implementation; GREEN1/1 afterward. node --check script.js and git diff --check passed.
+- Actual MoviMoney dialog verified in Chrome at1440/360px: correct Google Play href, local SVG icon, safe new-tab attributes, no APK button or download attribute.
+- Kept uncommitted user index.html changes untouched. GitHub push remains paused.
