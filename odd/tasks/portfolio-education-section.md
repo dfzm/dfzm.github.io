@@ -67,3 +67,4 @@ Implementation and verification are complete. Do not push or create a PR; no rem
 - Exact original About text nodes preserved, verified before/after.
 - Chrome local browser check: 1440px and 360px, light/dark themes; portrait loads, 65/35 ratio, no horizontal overflow.
 - Approved revision applied directly to index.html/styles.css; no push.
+- Layout work-unit commit: `8982454` (`feat(portfolio): apply approved magazine about layout`).
