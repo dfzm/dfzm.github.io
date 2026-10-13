@@ -66,6 +66,6 @@ test("About presents the approved narrative and separates design from developmen
     "Hosting y dominios. SEO técnico: velocidad, HTML semántico y metadatos. Medición con Analytics, Search Console y Tag Manager."
 ];
   for (const fragment of approvedCopy) assert.ok(plainText.includes(fragment), "approved copy must be present: " + fragment);
-  const design = actual.match(/<span><b>DISEÑAR<\/b>([\s\S]*?)<\/span>/)[1];
+  const design = actual.match(/<span><b>DISEÑO<\/b>([\s\S]*?)<\/span>/)[1];
   assert.doesNotMatch(design, /HTML|PHP|React|WordPress/);
 });

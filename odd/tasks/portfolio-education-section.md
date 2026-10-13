@@ -116,3 +116,9 @@ Implementation and verification are complete. Do not push or create a PR; no rem
 - STORE-3 RED: new card test failed because the badge was absent. GREEN: focused tests 3/3; node --check script.js and git diff --check passed.
 - Chrome checks at1440/360px: official image loads at140px, correct URL, no horizontal overflow; store click opens its own tab without opening the dialog. Ver proceso still opens the dialog. Screenshots inspected.
 - STORE-3 work-unit commit: `7f21241`. Existing About user changes remain uncommitted; no push.
+
+## Approved GitHub Publication
+- User authorized publication to origin/main using configured Git credentials; new commit message in Spanish.
+- Preserve approved labels DISEÑO, DESARROLLO and SOPORTE. Updated the design-copy test selector from the previous label; its content checks remain unchanged.
+- RED: full suite 5/6; outdated DISEÑAR selector returned null after approved label change.
+- Engram mirror pending because runtime session registration is unavailable.
