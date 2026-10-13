@@ -68,3 +68,16 @@ Implementation and verification are complete. Do not push or create a PR; no rem
 - Chrome local browser check: 1440px and 360px, light/dark themes; portrait loads, 65/35 ratio, no horizontal overflow.
 - Approved revision applied directly to index.html/styles.css; no push.
 - Layout work-unit commit: `8982454` (`feat(portfolio): apply approved magazine about layout`).
+
+
+## Approved Integrated Version
+- User approved competencias-02.html with the revised career narrative and creative software under Diseñar.
+- Preserve current local academic labels and unrelated changes. No new skills section.
+- Route: direct, no subagents as explicitly requested. Strict TDD with existing node:test runner.
+- [x] EDU-5: Apply selected preview to actual About section and verify exact content, responsive layout and themes.
+
+- EDU-5 RED: approved integrated-copy test failed before About changes; existing tests passed.
+- EDU-5 GREEN: 3 Node tests passed and git diff --check passed. Tests have no dependency on the temporary preview folder.
+- Visual checks: 1440/900/360px, light/dark; screenshots inspected, image loads, no overflow; desktop portrait/adjacent copy ratio 65/35, mobile stacked.
+- Academic text preserved byte-for-byte from current local index.html; unrelated sections unchanged.
+- Selected proposal 2 now implemented in actual website. No new competencies section, no subagents, no push.
