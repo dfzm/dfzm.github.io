@@ -106,3 +106,12 @@ Implementation and verification are complete. Do not push or create a PR; no rem
 - RED observed before image replacement; GREEN2/2; node --check and diffcheck passed. Chrome1440/360 real dialog: local image loads, correct link, no SVG/download attribute; screenshot inspected.
 - No push; user edits to index.html untouched.
 - STORE-2 work-unit commit: `d879fd5`.
+
+## Project List Store Badge
+- Scope: add the same official badge beneath MoviMoney summary, small, linking directly to Google Play. Preserve existing user edits. No subagents or push.
+- Route: direct inline under explicit no-subagent constraint. Strict TDD: node --test tests/movimoney-store.test.js.
+- [x] STORE-3: Add small project-card badge and verify image, URL, responsive rendering and independent click behavior.
+- Engram mirror pending: runtime session registration unavailable; memory writes prohibited.
+
+- STORE-3 RED: new card test failed because the badge was absent. GREEN: focused tests 3/3; node --check script.js and git diff --check passed.
+- Chrome checks at1440/360px: official image loads at140px, correct URL, no horizontal overflow; store click opens its own tab without opening the dialog. Ver proceso still opens the dialog. Screenshots inspected.
