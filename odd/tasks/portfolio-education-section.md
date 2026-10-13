@@ -93,3 +93,4 @@ Implementation and verification are complete. Do not push or create a PR; no rem
 - STORE-1 RED observed before implementation; GREEN1/1 afterward. node --check script.js and git diff --check passed.
 - Actual MoviMoney dialog verified in Chrome at1440/360px: correct Google Play href, local SVG icon, safe new-tab attributes, no APK button or download attribute.
 - Kept uncommitted user index.html changes untouched. GitHub push remains paused.
+- STORE-1 work-unit commit: `ad8e3fff43cd42cb697350540a6e3bfc7fefad39`.
