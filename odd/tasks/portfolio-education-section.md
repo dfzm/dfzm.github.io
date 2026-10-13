@@ -94,3 +94,14 @@ Implementation and verification are complete. Do not push or create a PR; no rem
 - Actual MoviMoney dialog verified in Chrome at1440/360px: correct Google Play href, local SVG icon, safe new-tab attributes, no APK button or download attribute.
 - Kept uncommitted user index.html changes untouched. GitHub push remains paused.
 - STORE-1 work-unit commit: `ad8e3fff43cd42cb697350540a6e3bfc7fefad39`.
+
+
+## Google Play Official Image Badge
+- User requested replacing the custom HTML/SVG button with the standard Google Play image badge as a link.
+- Spanish official badge, preserve original artwork and aspect ratio, same app URL.
+- [x] STORE-2: Download official badge locally, replace custom CTA content and styling, verify image/link. No subagents or push.
+
+- STORE-2: official es_badge_web_generic.png downloaded from play.google.com, 646x250 PNG; artwork unchanged, displayed at220px with original aspect ratio.
+- Custom SVG/text/button background removed. Image is inside safe Google Play hyperlink with alt and accessible new-tab label.
+- RED observed before image replacement; GREEN2/2; node --check and diffcheck passed. Chrome1440/360 real dialog: local image loads, correct link, no SVG/download attribute; screenshot inspected.
+- No push; user edits to index.html untouched.

@@ -907,13 +907,7 @@ function createProjectMarkup(project) {
   const safeStoreLink = getSafeURL(project.playStoreUrl);
   const storeLink = safeStoreLink ? `
     <a class="case-links__store" href="${escapeHTML(safeStoreLink)}" target="_blank" rel="noopener noreferrer" aria-label="Ver MoviMoney en Google Play (se abre en una pestaña nueva)">
-      <svg width="24" height="26" viewBox="0 0 28 28" aria-hidden="true" focusable="false">
-        <path fill="#4285f4" d="M3 2 15 14 3 26Z"/>
-        <path fill="#34a853" d="M3 2 20 11.6 15 14Z"/>
-        <path fill="#fbbc04" d="m20 11.6 4.2 2.4-4.2 2.4L17.5 14Z"/>
-        <path fill="#ea4335" d="M3 26 15 14l5 2.4Z"/>
-      </svg>
-      Ver en Google Play <span aria-hidden="true">↗</span>
+      <img src="imgs proyectos/google-play-badge-es.png" alt="Disponible en Google Play" width="646" height="250">
     </a>
   ` : "";
 
