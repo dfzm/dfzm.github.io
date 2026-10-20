@@ -434,22 +434,53 @@ const PROJECTS = {
     mediaSections: [
       {
         placement: "afterChallenge",
-        heading: "El estado del contenido en una sola vista",
-        intro: "El dashboard reúne páginas, publicaciones, borradores, almacenamiento y señales de salud editorial y SEO para convertir el panel en un punto de control operativo.",
-        layout: "centered",
+        heading: "Panel y contenidos",
+        intro: "Para que la creación desde el chat no pierda control, el panel reúne páginas, blog y estado SEO del sitio sin abrir cada editor.",
+        layout: "lead-split",
         items: [
-          { type: "image", src: "Proyectos/CMS DZ/CMS Dashboard.png", width: 1911, height: 1036, alt: "Dashboard de CMS DZ con resumen de páginas, publicaciones, borradores, almacenamiento y salud del sitio", label: "Dashboard · control operativo", caption: "La vista principal conecta el estado del contenido con alertas SEO y accesos a las áreas de trabajo prioritarias.", expandable: true }
+          { type: "image", src: "Proyectos/CMS DZ/cms-panel-dashboard.png", width: 1536, height: 1024, alt: "Panel de CMS AI DZ con contadores de páginas, posts, borradores y almacenamiento, y bloque de salud del sitio", label: "Dashboard · control operativo", caption: "La vista principal conecta el estado del contenido con las alertas de salud del sitio y los accesos a las áreas de trabajo prioritarias.", expandable: true },
+          { type: "image", src: "Proyectos/CMS DZ/cms-panel-paginas.png", width: 1536, height: 1024, alt: "Listado de páginas con título, slug, fecha de creación y puntuación SEO de cada una", label: "Páginas y SEO", caption: "Cada página muestra su slug y su puntuación SEO para detectar en un vistazo lo que falta.", expandable: true },
+          { type: "image", src: "Proyectos/CMS DZ/cms-blog.png", width: 1536, height: 1024, alt: "Gestión del blog con artículos en borrador y publicados, su estado y su puntuación SEO", label: "Blog · borradores y publicados", caption: "El blog separa borradores y publicados, y muestra la puntuación SEO de cada artículo.", expandable: true }
+        ]
+      },
+      {
+        placement: "afterChallenge",
+        heading: "Del chat a la página publicada",
+        intro: "La página empieza como una conversación. El agente propone la estructura y la persona decide cuándo aplicarla.",
+        layout: "full",
+        items: [
+          { type: "image", src: "Proyectos/CMS DZ/cms-chat-propuesta.png", width: 1536, height: 1024, alt: "Chat del editor con la petición de una página de inicio para un estudio de interiorismo y la propuesta del agente cargada al editor", label: "Chat · propuesta", caption: "El agente convierte la descripción en bloques (hero, servicios, franja destacada y llamado a la acción) y los carga en el editor antes de guardar.", expandable: true },
+          { type: "image", src: "Proyectos/CMS DZ/cms-chat-resultado.png", width: 1536, height: 1024, alt: "Página de inicio pública generada desde el chat, con hero dividido, tres tarjetas de servicios, franja destacada y botón de llamado a la acción", label: "Resultado público", caption: "La página publicada mantiene el tono pedido en el chat y la estructura revisada en el editor.", expandable: true }
         ]
       },
       {
         placement: "afterProcess",
-        heading: "De las reglas de diseño a la gestión editorial",
-        intro: "Estas evidencias muestran el recorrido que ya puede comprobarse: creación asistida y edición, reglas visuales compartidas y configuración de formularios desde el mismo CMS.",
-        layout: "lead-split",
+        heading: "Editor y sistema de diseño",
+        intro: "Las páginas se editan con control humano, y las reglas visuales se guardan como tokens y componentes reutilizables.",
+        layout: "full",
         items: [
-          { type: "image", src: "Proyectos/CMS DZ/CMS DZ Editor de paginas.png", width: 1917, height: 1022, alt: "Editor de páginas de CMS DZ con creación asistida por IA, información base, configuración SEO y acciones de previsualización", label: "Creación asistida y edición", caption: "El agente propone una estructura dentro del editor, mientras la aplicación conserva el control humano sobre su aplicación, el SEO, la previsualización y el guardado.", expandable: true },
-          { type: "image", src: "Proyectos/CMS DZ/CMS DZ Design system.png", width: 1910, height: 1027, alt: "Área de Design System de CMS DZ con generación asistida y pestañas de identidad, tokens, layout, patrones y componentes", label: "Design system · reglas compartidas", caption: "La identidad puede describirse o generarse con asistencia, pero queda estructurada en tokens, escalas, patrones y componentes reutilizables.", expandable: true },
-          { type: "image", src: "Proyectos/CMS DZ/CMS DZ Formularios.png", width: 1902, height: 1027, alt: "Gesti?n de formularios de CMS AI DZ, desde el listado hasta los campos y la configuraci?n", label: "Formularios ? gesti?n editorial", caption: "La vista muestra el listado, la edici?n de campos y la configuraci?n del formulario dentro del flujo editorial.", expandable: true }
+          { type: "image", src: "Proyectos/CMS DZ/cms-editor-pagina.png", width: 1536, height: 1024, alt: "Editor de página con información base, panel de diseño con IA y configuración SEO", label: "Creación asistida y edición", caption: "El agente propone una estructura dentro del editor, mientras la persona conserva el control sobre el SEO, la previsualización y el guardado.", expandable: true },
+          { type: "image", src: "Proyectos/CMS DZ/cms-design-system.png", width: 1536, height: 1024, alt: "Área de Design System con vista previa del sitio en claro y oscuro, escritorio, tableta y móvil, y colores con su contraste", label: "Design system · reglas compartidas", caption: "La identidad se estructura en tokens, escalas y componentes reutilizables, con el contraste de cada color a la vista.", expandable: true }
+        ]
+      },
+      {
+        placement: "afterProcess",
+        heading: "Formularios dentro del flujo editorial",
+        intro: "Los formularios se crean, publican y revisan desde el mismo CMS que las páginas.",
+        layout: "full",
+        items: [
+          { type: "image", src: "Proyectos/CMS DZ/cms-formularios-listado.png", width: 1536, height: 1024, alt: "Listado de formularios con Solicitud de presupuesto publicado, número de envíos y mensajes no leídos", label: "Formularios · listado", caption: "Cada formulario muestra su estado, los envíos recibidos y los mensajes pendientes de leer.", expandable: true },
+          { type: "image", src: "Proyectos/CMS DZ/cms-formularios-detalle.png", width: 1536, height: 1024, alt: "Edición del formulario Solicitud de presupuesto con cinco campos, su tipo y su obligatoriedad", label: "Formularios · campos", caption: "Los campos se ordenan, se tipan y se marcan como obligatorios desde la misma pantalla antes de publicar.", expandable: true }
+        ]
+      },
+      {
+        placement: "afterProcess",
+        heading: "Una segunda página creada desde el chat",
+        intro: "El mismo flujo sirve para otras páginas. La de servicios se genera a partir de una sola instrucción.",
+        layout: "full",
+        items: [
+          { type: "image", src: "Proyectos/CMS DZ/cms-servicios-chat.png", width: 1536, height: 1024, alt: "Chat del editor con la petición de la página de servicios y la propuesta cargada al editor", label: "Chat · servicios", caption: "Una instrucción describe el encabezado, el párrafo y las cuatro fases del proceso; el agente las carga en el editor.", expandable: true },
+          { type: "image", src: "Proyectos/CMS DZ/cms-servicios-resultado.png", width: 1536, height: 1024, alt: "Página pública de servicios de interiorismo con cuatro tarjetas de fases y el botón Solicitar presupuesto", label: "Resultado público · servicios", caption: "La página resultante mantiene la estructura pedida y queda lista para revisar antes de publicar.", expandable: true }
         ]
       }
     ]
