@@ -6,6 +6,12 @@
   <meta name="description" content="Portafolio de Daniel, desarrollador de software y diseñador UX/UI. Proyectos profesionales y personales de diseño, web y software.">
   <meta name="theme-color" content="#f3efe5">
   <title>Daniel — Desarrollador de Software y Diseñador UX/UI</title>
+  <link rel="canonical" href="https://dfzm.github.io/">
+  <link rel="alternate" hreflang="es" href="https://dfzm.github.io/">
+  <link rel="alternate" hreflang="en" href="https://dfzm.github.io/en/">
+  <link rel="alternate" hreflang="x-default" href="https://dfzm.github.io/">
+  <meta property="og:locale" content="es_ES">
+  <meta property="og:locale:alternate" content="en_US">
   <link rel="icon" type="image/png" href="favicon.png">
   <link rel="stylesheet" href="styles.css">
   <script src="i18n/es.js" defer></script>
@@ -28,10 +34,17 @@
       <a href="#sobre-mi">Sobre mí</a>
       <a href="#contacto">Contacto</a>
     </nav>
-    <button class="theme-toggle magnetic" type="button" aria-label="Activar tema oscuro" aria-pressed="false">
-      <span aria-hidden="true" class="theme-toggle__icon">◐</span>
-      <span class="theme-toggle__text">Oscuro</span>
-    </button>
+    <div class="header-actions">
+      <nav class="lang-switch" aria-label="Idioma">
+        <span class="lang-switch__item" aria-current="true" lang="es">ES</span>
+        <span class="lang-switch__divider" aria-hidden="true">/</span>
+        <a class="lang-switch__item" href="en/" hreflang="en" lang="en" aria-label="Read in English" data-lang-switch>EN</a>
+      </nav>
+      <button class="theme-toggle magnetic" type="button" aria-label="Activar tema oscuro" aria-pressed="false">
+        <span aria-hidden="true" class="theme-toggle__icon">◐</span>
+        <span class="theme-toggle__text">Oscuro</span>
+      </button>
+    </div>
   </header>
 
   <main id="contenido">
