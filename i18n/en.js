@@ -421,7 +421,7 @@ window.PORTFOLIO_I18N = {
       status: "Live · in active development · target: December 2026",
       role: "Next.js · React · TypeScript · Node.js · MySQL  ",
       color: "#9cb89a",
-      summary: "I built a CRM that brings clients, websites, maintenance hours, tickets, and reports together in a single workspace. The first working version is already live at crm.dzionix.com and gets weekly updates while I finish the product, which I expect to complete by the end of 2026.",
+      summary: "I built this CRM for my own use, to bring my clients, their websites, maintenance hours, tickets, and reports together in a single workspace. I already use a first working version, which I keep expanding with weekly updates.",
       challenge: "The challenge was to turn management scattered across conversations, emails, documents, and separate tools into a system with clear rules, defined roles, and data separation between agencies.",
       participation: "I handled domain analysis, data modeling, architecture, front-end and back-end, authentication, role-based permissions, tickets and hours, reports, notifications, and documentation. The app is already live, and the implementation keeps evolving with weekly improvements to the flows, the visual polish, and getting the product ready.",
       process: [
@@ -479,7 +479,10 @@ window.PORTFOLIO_I18N = {
       ],
       deliverables: ["Block-based page editor", "Public renderer", "Editorial workflow and permissions", "Design system and reusable components", "Conversational page creation", "Blog, SEO, form, and media management"],
       technology: "Next.js · React · TypeScript · Prisma · MySQL · Supabase Storage · AI",
-      note: "It isn’t publicly available. It isn’t presented as a multi-agency SaaS or as a system that publishes automatically with AI.",
+      link: "https://cms-ai-dz.vercel.app/",
+      linkLabel: "Visit the CMS AI DZ demo",
+      noteLink: { href: "https://cms-ai-dz.vercel.app/", label: "cms-ai-dz.vercel.app", ariaLabel: "Visit the CMS AI DZ demo (opens in a new tab)" },
+      note: "CMS AI DZ has a public demo at cms-ai-dz.vercel.app. The project is still in development: the published version works, but the AI chat, the editor, the design system, and other areas will keep evolving. It isn’t presented as a multi-agency SaaS or as a system that publishes automatically with AI.",
       mediaSections: [
         {
           placement: "afterChallenge",

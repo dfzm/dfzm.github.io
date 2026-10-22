@@ -421,7 +421,7 @@ window.PORTFOLIO_I18N = {
       status: "Publicado · desarrollo activo · proyección: Diciembre 2026",
       role: "Next.js · React · TypeScript · Node.js · MySQL  ",
       color: "#9cb89a",
-      summary: "Desarrollé un CRM para centralizar clientes, sitios web, horas de mantenimiento, tickets y reportes dentro de un mismo espacio de trabajo. La primera versión funcional ya está publicada en crm.dzionix.com y recibe actualizaciones semanales mientras completo el producto, con previsión de terminarlo a finales de 2026.",
+      summary: "Desarrollé este CRM para uso personal, con el objetivo de reunir en un mismo espacio de trabajo a mis clientes, sus sitios web, las horas de mantenimiento, los tickets y los reportes. Ya uso una primera versión funcional, que sigo ampliando con actualizaciones semanales.",
       challenge: "El reto era convertir una gestión repartida entre conversaciones, correos, documentos y herramientas separadas en un sistema con reglas claras, roles definidos y separación de datos entre agencias.",
       participation: "Me encargué del análisis del dominio, modelado de datos, arquitectura, frontend y backend, autenticación, permisos por rol, tickets y horas, reportes, notificaciones y documentación. La aplicación ya está publicada y la implementación continúa evolucionando con mejoras semanales en los flujos, el acabado visual y la preparación del producto.",
       process: [
@@ -480,7 +480,10 @@ window.PORTFOLIO_I18N = {
       ],
       deliverables: ["Editor de páginas basado en bloques", "Renderizador público", "Flujo editorial y permisos", "Sistema de diseño y componentes reutilizables", "Creación conversacional de páginas", "Gestión de blog, SEO, formularios y medios"],
       technology: "Next.js · React · TypeScript · Prisma · MySQL · Supabase Storage · IA",
-      note: "No está disponible públicamente. No se presenta como SaaS multiagencia ni como un sistema que publica automáticamente con IA.",
+      link: "https://cms-ai-dz.vercel.app/",
+      linkLabel: "Visitar la demo de CMS AI DZ",
+      noteLink: { href: "https://cms-ai-dz.vercel.app/", label: "cms-ai-dz.vercel.app", ariaLabel: "Visitar la demo de CMS AI DZ (se abre en una pestaña nueva)" },
+      note: "CMS AI DZ cuenta con una demo pública en cms-ai-dz.vercel.app. El proyecto sigue en desarrollo: la versión publicada es funcional, pero el chat con IA, el editor, el design system y otras áreas continuarán evolucionando. No se presenta como SaaS multiagencia ni como un sistema que publica automáticamente con IA.",
       mediaSections: [
         {
           placement: "afterChallenge",
