@@ -415,7 +415,7 @@ window.PORTFOLIO_I18N = {
       ]
     },
     "crm-dz": {
-      index: "05",
+      index: "06",
       title: "CRM DZ",
       category: "Personal project · Full-stack web app",
       status: "Live · in active development · target: December 2026",
@@ -460,7 +460,7 @@ window.PORTFOLIO_I18N = {
       ]
     },
     "cms-propio": {
-      index: "06",
+      index: "05",
       title: "CMS AI DZ",
       category: "Personal project · Full-stack web app",
       status: "In development · working core and design · target: January 2027",
