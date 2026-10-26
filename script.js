@@ -15,6 +15,8 @@ const SECTION_HASH_PAIRS = [
   ["inicio", "top"],
   ["contenido", "content"],
   ["proyectos", "projects"],
+  ["proyectos-personales", "personal-projects"],
+  ["proyectos-profesionales", "professional-projects"],
   ["proyectos-secundarios", "more-projects"],
   ["servicios", "services"],
   ["forma-de-trabajo", "process"],
@@ -750,6 +752,106 @@ function setupScrollProgress() {
   update();
 }
 
+function setupStickyHeader() {
+  const header = document.querySelector(".site-header");
+  if (!header) return;
+  const SCROLLED_AFTER = 80;
+  const SCROLL_TOLERANCE = 4;
+  let lastScrollY = window.scrollY;
+  let ticking = false;
+
+  // Keep the header reachable while it holds focus, a modal is open or motion is reduced.
+  const mustStayVisible = () => reducedMotion.matches || header.matches(":focus-within") || Boolean(dialog?.open || lightbox?.open);
+
+  const setHidden = (hidden) => {
+    header.classList.toggle("is-hidden", hidden);
+    document.documentElement.classList.toggle("header-hidden", hidden);
+  };
+
+  const update = () => {
+    const scrollY = Math.max(0, window.scrollY);
+    const delta = scrollY - lastScrollY;
+    header.classList.toggle("is-scrolled", scrollY > SCROLLED_AFTER);
+    if (mustStayVisible() || scrollY <= header.offsetHeight) setHidden(false);
+    else if (delta > SCROLL_TOLERANCE) setHidden(true);
+    else if (delta < -SCROLL_TOLERANCE) setHidden(false);
+    if (Math.abs(delta) > SCROLL_TOLERANCE) lastScrollY = scrollY;
+    ticking = false;
+  };
+
+  window.addEventListener("scroll", () => {
+    if (ticking) return;
+    ticking = true;
+    requestAnimationFrame(update);
+  }, { passive: true });
+  header.addEventListener("focusin", () => setHidden(false));
+  update();
+}
+
+function setupProjectSubnav() {
+  const subnav = document.querySelector(".project-subnav");
+  const section = subnav?.closest("section");
+  if (!subnav || !section) return;
+  const links = [...subnav.querySelectorAll(".project-subnav__link")];
+  const groups = links.map((link) => document.getElementById(link.hash.slice(1))).filter(Boolean);
+
+  syncProjectSubnavHeight(subnav);
+  trackProjectSubnavPinned(subnav, section.querySelector(".project-subnav__sentinel"));
+
+  if (reducedMotion.matches || !("IntersectionObserver" in window)) subnav.classList.add("is-visible");
+  if (!("IntersectionObserver" in window)) return;
+
+  if (!subnav.classList.contains("is-visible")) {
+    const entryObserver = new IntersectionObserver(([entry]) => {
+      if (!entry.isIntersecting) return;
+      subnav.classList.add("is-visible");
+      entryObserver.disconnect();
+    }, { threshold: 0 });
+    entryObserver.observe(subnav);
+  }
+
+  const setCurrent = (groupId) => {
+    links.forEach((link) => {
+      if (link.hash === `#${groupId}`) link.setAttribute("aria-current", "true");
+      else link.removeAttribute("aria-current");
+    });
+  };
+
+  // A thin band just below the sticky bars decides which group is "in view".
+  const groupObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => { if (entry.isIntersecting) setCurrent(entry.target.id); });
+  }, { rootMargin: "-25% 0px -70% 0px" });
+  groups.forEach((group) => groupObserver.observe(group));
+}
+
+// Groups scroll under the sticky bar, so their scroll-margin needs its real height.
+function syncProjectSubnavHeight(subnav) {
+  const update = () => document.documentElement.style.setProperty("--subnav-height", `${subnav.offsetHeight}px`);
+  update();
+  if ("ResizeObserver" in window) new ResizeObserver(update).observe(subnav);
+  else window.addEventListener("resize", update, { passive: true });
+}
+
+// The sentinel sits flush above the bar; once the bar sticks, it leaves the sentinel behind.
+// Comparing rects stays correct while --header-offset changes as the header hides/shows.
+function trackProjectSubnavPinned(subnav, sentinel) {
+  if (!sentinel) return;
+  let ticking = false;
+  const update = () => {
+    ticking = false;
+    const pinned = sentinel.getBoundingClientRect().bottom < subnav.getBoundingClientRect().top - 1;
+    subnav.classList.toggle("is-pinned", pinned);
+  };
+  const requestUpdate = () => {
+    if (ticking) return;
+    ticking = true;
+    requestAnimationFrame(update);
+  };
+  window.addEventListener("scroll", requestUpdate, { passive: true });
+  window.addEventListener("resize", requestUpdate, { passive: true });
+  update();
+}
+
 function setupTicker() {
   const ticker = document.querySelector(".ticker");
   const track = ticker?.querySelector(".ticker__track");
@@ -937,6 +1039,8 @@ setupTheme();
 setupLanguageSwitch();
 setupReveal();
 setupScrollProgress();
+setupStickyHeader();
+setupProjectSubnav();
 setupTicker();
 setupCursor();
 setupMagneticElements();

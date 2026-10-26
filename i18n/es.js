@@ -52,7 +52,7 @@ window.PORTFOLIO_I18N = {
   },
   projects: {
     "ca-na-tess": {
-      index: "01",
+      index: "05",
       title: "Ca na Tess",
       category: "Proyecto profesional",
       status: "Publicado · 2026",
@@ -106,7 +106,7 @@ window.PORTFOLIO_I18N = {
       ]
     },
     colive: {
-      index: "02",
+      index: "06",
       title: "Colive",
       category: "Proyecto profesional",
       status: "Propuestas implementadas · 2025",
@@ -281,7 +281,7 @@ window.PORTFOLIO_I18N = {
       ]
     },
     mega: {
-      index: "03",
+      index: "07",
       title: "Mega",
       category: "Proyecto profesional",
       status: "Publicado · 2025",
@@ -334,7 +334,7 @@ window.PORTFOLIO_I18N = {
       ]
     },
     "barcelo-indajaus": {
-      index: "04",
+      index: "08",
       title: "Barceló Indajaus",
       category: "Proyecto profesional",
       status: "Publicado · 2024",
@@ -379,7 +379,7 @@ window.PORTFOLIO_I18N = {
       ]
     },
     "calculadora-ia": {
-      index: "08",
+      index: "04",
       title: "Calculadora de presupuestos con chatbot de IA",
       category: "Proyecto personal",
       status: "Demo pública",
@@ -415,7 +415,7 @@ window.PORTFOLIO_I18N = {
       ]
     },
     "crm-dz": {
-      index: "06",
+      index: "02",
       title: "CRM DZ",
       category: "Proyecto personal · Aplicación web full-stack",
       status: "Publicado · desarrollo activo · proyección: Diciembre 2026",
@@ -460,7 +460,7 @@ window.PORTFOLIO_I18N = {
       ]
     },
     "cms-propio": {
-      index: "05",
+      index: "01",
       title: "CMS AI DZ",
       category: "Proyecto personal · Aplicación web full-stack",
       status: "En desarrollo · núcleo y diseño funcional · proyección: Enero 2027",
@@ -547,7 +547,7 @@ window.PORTFOLIO_I18N = {
       ]
     },
     "movimoney": {
-      index: "07",
+      index: "03",
       title: "MoviMoney",
       category: "Proyecto personal",
       status: "En desarrollo · Nucleo y diseño Funcional",
@@ -588,7 +588,7 @@ window.PORTFOLIO_I18N = {
       ]
     },
     "dream-school": {
-      index: "11",
+      index: "07",
       title: "Dream School",
       category: "Proyecto profesional",
       status: "Publicado",
@@ -632,7 +632,7 @@ window.PORTFOLIO_I18N = {
       ]
     },
     "preventing-treating": {
-      index: "10",
+      index: "06",
       title: "Preventing / Treating With Experts",
       category: "Proyecto profesional",
       status: "Dos sitios publicados",
@@ -696,7 +696,7 @@ window.PORTFOLIO_I18N = {
       ]
     },
     "barentszen": {
-      index: "09",
+      index: "05",
       title: "Barentszen / Barentszen Group",
       category: "Proyecto profesional",
       status: "Dos sitios publicados",

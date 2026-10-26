@@ -93,84 +93,17 @@
         <p>A selection of professional and personal projects that shows how I approach different needs: understanding the context, organizing the experience, and building a solution that works. For each project, I explain the challenge, my role, and the decisions that guided the work.</p>
       </header>
 
-      <div class="project-group">
-        <div class="project-group__heading reveal">
-          <h3>Professional projects</h3>
-          <p>Websites, online stores, and digital experiences built for companies and teams.</p>
+      <div class="project-subnav__sentinel" aria-hidden="true"></div>
+      <nav class="project-subnav" aria-label="Projects">
+        <span class="project-subnav__label" aria-hidden="true">Projects <i>/</i></span>
+        <div class="project-subnav__tabs">
+          <a class="project-subnav__link" href="#personal-projects">Personal</a>
+          <a class="project-subnav__link" href="#professional-projects">Professional</a>
         </div>
+        <a class="project-subnav__top" href="#projects">↑ Top</a>
+      </nav>
 
-        <div class="project-list">
-          <article class="project-card project-card--canatess reveal" data-project-card="ca-na-tess">
-            <div class="project-card__button">
-              <span class="project-number">01</span>
-              <div class="project-copy">
-                <span class="project-meta"><span>Professional</span><span>Live · 2026</span></span>
-                <h4 id="project-title-ca-na-tess">Ca na Tess</h4>
-                <span class="project-role">UX/UI redesign + targeted development</span>
-                <span class="project-summary">I redesigned and built the nutrition consultation form, turning a 12-step external form into a 7-step experience built into the website.</span>
-              </div>
-              <span class="project-cover cover-form" aria-hidden="true">
-                <img src="../imgs proyectos/ca-na-tess.png" alt="">
-              </span>
-              <button class="project-arrow" type="button" data-project="ca-na-tess" aria-labelledby="project-title-ca-na-tess project-cta-ca-na-tess"><span id="project-cta-ca-na-tess">View case study</span><b aria-hidden="true">↗</b></button>
-            </div>
-          </article>
-
-          <article class="project-card project-card--colive reveal" data-project-card="colive">
-            <div class="project-card__button">
-              <span class="project-number">02</span>
-              <div class="project-copy">
-                <span class="project-meta"><span>Professional</span><span>Proposals implemented · 2025</span></span>
-                <h4 id="project-title-colive">Colive</h4>
-                <span class="project-role">UX/UI audit + wireframes + high-fidelity design</span>
-                <span class="project-summary">I audited the booking flow step by step and turned every point of friction into a proposal. Colive shipped many of them on its live site.</span>
-              </div>
-              <span class="project-cover cover-colive" aria-hidden="true">
-                <img src="../imgs proyectos/colive.png" alt="">
-              </span>
-              <button class="project-arrow" type="button" data-project="colive" aria-labelledby="project-title-colive project-cta-colive"><span id="project-cta-colive">View case study</span><b aria-hidden="true">↗</b></button>
-            </div>
-          </article>
-
-          <article class="project-card project-card--mega reveal" data-project-card="mega">
-            <div class="project-card__button">
-              <span class="project-number">03</span>
-              <div class="project-copy">
-                <span class="project-meta"><span>Professional</span><span>Live · 2025</span></span>
-                <h4 id="project-title-mega">Mega</h4>
-                <span class="project-role">Front-end implementation · Design provided in Figma</span>
-                <span class="project-summary">I turned the complete design defined in Figma into a working website, building its screens in Elementor Pro on WordPress.</span>
-              </div>
-              <span class="project-cover cover-mega" aria-hidden="true">
-                <img src="../imgs proyectos/mega.png" alt="">
-              </span>
-              <button class="project-arrow" type="button" data-project="mega" aria-labelledby="project-title-mega project-cta-mega"><span id="project-cta-mega">View case study</span><b aria-hidden="true">↗</b></button>
-            </div>
-          </article>
-
-          <article class="project-card project-card--barcelo reveal" data-project-card="barcelo-indajaus">
-            <div class="project-card__button">
-              <span class="project-number">04</span>
-              <div class="project-copy">
-                <span class="project-meta"><span>Professional</span><span>Live · 2024</span></span>
-                <h4 id="project-title-barcelo-indajaus">Barceló Indajaus</h4>
-                <span class="project-role">E-commerce implementation · WordPress to PrestaShop</span>
-                <span class="project-summary">I rebuilt the existing WordPress store in PrestaShop, carrying over its visual structure and its catalog and product experience.</span>
-              </div>
-              <span class="project-cover cover-shop" aria-hidden="true">
-                <img src="../imgs proyectos/barcelo-indajaus.png" alt="">
-              </span>
-              <button class="project-arrow" type="button" data-project="barcelo-indajaus" aria-labelledby="project-title-barcelo-indajaus project-cta-barcelo-indajaus"><span id="project-cta-barcelo-indajaus">View case study</span><b aria-hidden="true">↗</b></button>
-            </div>
-          </article>
-        </div>
-
-        <div class="project-more reveal">
-          <a class="button button--secondary magnetic" href="projects.html"><span>View all projects</span><span aria-hidden="true">↗</span></a>
-        </div>
-      </div>
-
-      <div class="project-group project-group--personal">
+      <div class="project-group project-group--personal" id="personal-projects">
         <div class="project-group__heading reveal">
           <h3>Personal projects</h3>
           <p>Projects I build on my own initiative to explore ideas, test decisions, and keep growing as a software developer.</p>
@@ -180,9 +113,9 @@
 
           <article class="project-card project-card--cms reveal" data-project-card="cms-propio">
             <div class="project-card__button">
-              <span class="project-number">05</span>
+              <span class="project-number">01</span>
               <div class="project-copy">
-                <span class="project-meta"><span>Personal</span><span> In development · Core features working</span></span>
+                <span class="project-meta"><span>Personal</span><span class="project-status">In development · Core features working</span></span>
               <h4 id="project-title-cms-propio">CMS AI DZ</h4>
                 <span class="project-role"> Full-stack web app · Next.js React TypeScript Node.js</span>
                 <span class="project-summary">I built a CMS where pages are created mainly through an AI chat and then managed, reviewed, and published from the dashboard.</span>
@@ -196,9 +129,9 @@
 
           <article class="project-card project-card--crm reveal" data-project-card="crm-dz">
             <div class="project-card__button">
-              <span class="project-number">06</span>
+              <span class="project-number">02</span>
               <div class="project-copy">
-                <span class="project-meta"><span>Personal</span><span> Initial version · Core features working</span></span>
+                <span class="project-meta"><span>Personal</span><span class="project-status">Initial version · Core features working</span></span>
                 <h4 id="project-title-crm-dz">CRM DZ</h4>
                 <span class="project-role">Full-stack web app · Next.js React TypeScript Node.js</span>
                 <span class="project-summary">I built a CRM that brings clients, websites, maintenance hours, tickets, and reports together in a single place.</span>
@@ -212,9 +145,9 @@
 
           <article class="project-card project-card--gastos reveal" data-project-card="movimoney">
             <div class="project-card__button">
-              <span class="project-number">07</span>
+              <span class="project-number">03</span>
               <div class="project-copy">
-                <span class="project-meta"><span>Personal</span><span> Initial version · Core features working</span></span>
+                <span class="project-meta"><span>Personal</span><span class="project-status">Initial version · Core features working</span></span>
                 <h4 id="project-title-mis-gastos-local">MoviMoney</h4>
                 <span class="project-role">Android app · React Native · Local</span>
                 <span class="project-summary">I built an Android app to log income and expenses, check your balance, and review your history without relying on a backend.</span>
@@ -231,10 +164,10 @@
 
           <article class="project-card project-card--calculator reveal" data-project-card="calculadora-ia">
             <div class="project-card__button">
-              <span class="project-number">08</span>
+              <span class="project-number">04</span>
               <div class="project-copy">
-                <span class="project-meta"><span>Personal</span><span>Public demo</span></span>
-                <h4 id="project-title-calculadora-ia">Cost estimate calculator with AI chatbot</h4>
+                <span class="project-meta"><span>Personal</span><span class="project-status">Public demo</span></span>
+                <h4 id="project-title-calculadora-ia" class="project-title--long">Cost estimate calculator with AI chatbot</h4>
                 <span class="project-role">Design + development + AI integration</span>
                 <span class="project-summary">I built an interactive calculator to estimate renovation budgets and integrated an AI chatbot to guide users along the way.</span>
               </div>
@@ -244,6 +177,83 @@
               <button class="project-arrow" type="button" data-project="calculadora-ia" aria-labelledby="project-title-calculadora-ia project-cta-calculadora-ia"><span id="project-cta-calculadora-ia">View case study</span><b aria-hidden="true">↗</b></button>
             </div>
           </article>
+        </div>
+      </div>
+
+      <div class="project-group project-group--professional" id="professional-projects">
+        <div class="project-group__heading reveal">
+          <h3>Professional projects</h3>
+          <p>Websites, online stores, and digital experiences built for companies and teams.</p>
+        </div>
+
+        <div class="project-list">
+          <article class="project-card project-card--canatess reveal" data-project-card="ca-na-tess">
+            <div class="project-card__button">
+              <span class="project-number">05</span>
+              <div class="project-copy">
+                <span class="project-meta"><span>Professional</span><span class="project-status">Live · 2026</span></span>
+                <h4 id="project-title-ca-na-tess">Ca na Tess</h4>
+                <span class="project-role">UX/UI redesign + targeted development</span>
+                <span class="project-summary">I redesigned and built the nutrition consultation form, turning a 12-step external form into a 7-step experience built into the website.</span>
+              </div>
+              <span class="project-cover cover-form" aria-hidden="true">
+                <img src="../imgs proyectos/ca-na-tess.png" alt="">
+              </span>
+              <button class="project-arrow" type="button" data-project="ca-na-tess" aria-labelledby="project-title-ca-na-tess project-cta-ca-na-tess"><span id="project-cta-ca-na-tess">View case study</span><b aria-hidden="true">↗</b></button>
+            </div>
+          </article>
+
+          <article class="project-card project-card--colive reveal" data-project-card="colive">
+            <div class="project-card__button">
+              <span class="project-number">06</span>
+              <div class="project-copy">
+                <span class="project-meta"><span>Professional</span><span class="project-status">Proposals implemented · 2025</span></span>
+                <h4 id="project-title-colive">Colive</h4>
+                <span class="project-role">UX/UI audit + wireframes + high-fidelity design</span>
+                <span class="project-summary">I audited the booking flow step by step and turned every point of friction into a proposal. Colive shipped many of them on its live site.</span>
+              </div>
+              <span class="project-cover cover-colive" aria-hidden="true">
+                <img src="../imgs proyectos/colive.png" alt="">
+              </span>
+              <button class="project-arrow" type="button" data-project="colive" aria-labelledby="project-title-colive project-cta-colive"><span id="project-cta-colive">View case study</span><b aria-hidden="true">↗</b></button>
+            </div>
+          </article>
+
+          <article class="project-card project-card--mega reveal" data-project-card="mega">
+            <div class="project-card__button">
+              <span class="project-number">07</span>
+              <div class="project-copy">
+                <span class="project-meta"><span>Professional</span><span class="project-status">Live · 2025</span></span>
+                <h4 id="project-title-mega">Mega</h4>
+                <span class="project-role">Front-end implementation · Design provided in Figma</span>
+                <span class="project-summary">I turned the complete design defined in Figma into a working website, building its screens in Elementor Pro on WordPress.</span>
+              </div>
+              <span class="project-cover cover-mega" aria-hidden="true">
+                <img src="../imgs proyectos/mega.png" alt="">
+              </span>
+              <button class="project-arrow" type="button" data-project="mega" aria-labelledby="project-title-mega project-cta-mega"><span id="project-cta-mega">View case study</span><b aria-hidden="true">↗</b></button>
+            </div>
+          </article>
+
+          <article class="project-card project-card--barcelo reveal" data-project-card="barcelo-indajaus">
+            <div class="project-card__button">
+              <span class="project-number">08</span>
+              <div class="project-copy">
+                <span class="project-meta"><span>Professional</span><span class="project-status">Live · 2024</span></span>
+                <h4 id="project-title-barcelo-indajaus">Barceló Indajaus</h4>
+                <span class="project-role">E-commerce implementation · WordPress to PrestaShop</span>
+                <span class="project-summary">I rebuilt the existing WordPress store in PrestaShop, carrying over its visual structure and its catalog and product experience.</span>
+              </div>
+              <span class="project-cover cover-shop" aria-hidden="true">
+                <img src="../imgs proyectos/barcelo-indajaus.png" alt="">
+              </span>
+              <button class="project-arrow" type="button" data-project="barcelo-indajaus" aria-labelledby="project-title-barcelo-indajaus project-cta-barcelo-indajaus"><span id="project-cta-barcelo-indajaus">View case study</span><b aria-hidden="true">↗</b></button>
+            </div>
+          </article>
+        </div>
+
+        <div class="project-more reveal">
+          <a class="button button--secondary magnetic" href="projects.html"><span>View all projects</span><span aria-hidden="true">↗</span></a>
         </div>
       </div>
     </section>

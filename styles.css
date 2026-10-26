@@ -19,6 +19,8 @@
   --ease-in-out: cubic-bezier(.65, 0, .35, 1);
   --pad: clamp(1rem, 3.2vw, 3.75rem);
   --header-height: 5rem;
+  --header-compact: 3.75rem;
+  --subnav-height: 2.75rem;
 }
 
 html[data-theme="dark"] {
@@ -105,18 +107,46 @@ a { text-decoration-thickness: .08em; text-underline-offset: .18em; }
 
 .section-shell { padding-inline: var(--pad); }
 
+/* Sticky header: its flow contribution stays at zero (height + negative margin) so heroes keep overlaying it.
+   It hides via `top`, never transform/filter, because those would trap the fixed mobile nav inside it. */
 .site-header {
-  position: absolute;
+  --header-current: var(--header-height);
+  position: sticky;
   z-index: 100;
-  inset: 0 0 auto;
-  min-height: var(--header-height);
+  top: 0;
+  height: var(--header-current);
+  margin-bottom: calc(-1 * var(--header-current));
   padding: 1rem var(--pad);
   display: grid;
   grid-template-columns: 1fr auto 1fr;
   align-items: center;
   gap: 1rem;
   border-bottom: 1px solid var(--line);
+  transition: top .45s var(--ease-out), height .35s var(--ease-out), margin-bottom .35s var(--ease-out), padding .35s var(--ease-out);
 }
+
+.site-header::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  background: color-mix(in srgb, var(--paper) 92%, transparent);
+  backdrop-filter: blur(10px);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .35s var(--ease-out);
+}
+
+.site-header.is-scrolled { --header-current: var(--header-compact); padding-block: .5rem; }
+.site-header.is-scrolled::before { opacity: 1; }
+.site-header.is-hidden { top: calc(-1 * var(--header-current) - 1px); }
+
+/* Offset for sticky elements under the header; 0 while the header is tucked away. */
+html { --header-offset: var(--header-compact); }
+html.header-hidden { --header-offset: 0px; }
+
+main section[id], .site-footer[id] { scroll-margin-top: var(--header-compact); }
+.project-group[id] { scroll-margin-top: calc(var(--header-compact) + var(--subnav-height)); }
 
 .wordmark {
   justify-self: start;
@@ -352,6 +382,53 @@ html[data-theme="dark"] .hero-noise { mix-blend-mode: screen; opacity: .08; }
 .section-heading h2, .about h2, .contact h2 { margin: 0; font: 900 clamp(3rem, 7vw, 7.5rem)/.82 var(--display); letter-spacing: -.07em; text-transform: uppercase; }
 .section-heading h2 em, .contact h2 em { color: var(--coral); font-family: var(--serif); font-weight: 400; text-transform: none; }
 .section-heading > p:last-child { margin: .35rem 0 0; max-width: 58ch; }
+
+/* Projects subnav: translucent tab bar under the section heading; sticks below the header while projects are on screen. */
+.project-subnav__sentinel { height: 1px; margin-bottom: -1px; }
+.project-subnav {
+  position: sticky;
+  z-index: 50;
+  top: var(--header-offset);
+  margin: 0 calc(-1 * var(--pad)) clamp(3rem, 5vw, 5rem);
+  padding-inline: var(--pad);
+  display: flex;
+  align-items: center;
+  gap: 2.25rem;
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid color-mix(in srgb, var(--line) 15%, transparent);
+  background: color-mix(in srgb, var(--paper) 88%, transparent);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  transition: top .45s var(--ease-out), border-color .3s var(--ease-out), box-shadow .35s var(--ease-out), opacity .5s var(--ease-out), transform .5s var(--ease-out);
+}
+.project-subnav.is-pinned { border-top-color: color-mix(in srgb, var(--line) 15%, transparent); box-shadow: 0 10px 30px -15px color-mix(in srgb, var(--ink) 10%, transparent); }
+html[data-theme="dark"] .project-subnav.is-pinned { box-shadow: 0 12px 32px -12px rgb(0 0 0 / .55); }
+.project-subnav__label,
+.project-subnav__top { color: var(--muted); font-size: .7rem; font-weight: 850; letter-spacing: .12em; text-transform: uppercase; white-space: nowrap; }
+.project-subnav__label { max-width: 0; margin-right: -2.25rem; overflow: hidden; opacity: 0; transition: max-width .5s var(--ease-out), margin .5s var(--ease-out), opacity .35s var(--ease-out); }
+.project-subnav__label i { font-style: normal; }
+.project-subnav__tabs { display: flex; gap: 2.25rem; min-width: 0; }
+.project-subnav__link {
+  position: relative;
+  padding-block: 1.1rem;
+  color: var(--muted);
+  font: 500 .95rem/1 var(--body);
+  text-decoration: none;
+  white-space: nowrap;
+  transition: color .25s var(--ease-out);
+}
+.project-subnav__link::after { content: ""; position: absolute; left: 0; right: 0; bottom: -1px; height: 2px; background: currentColor; transform: scaleX(0); transform-origin: left; transition: transform .35s var(--ease-out); }
+.project-subnav__link:hover, .project-subnav__link[aria-current="true"] { color: var(--ink); }
+.project-subnav__link[aria-current="true"] { font-weight: 650; }
+.project-subnav__link:hover::after, .project-subnav__link[aria-current="true"]::after { transform: scaleX(1); }
+.project-subnav__top { margin-left: auto; padding-block: 1.1rem; text-decoration: none; transition: opacity .35s var(--ease-out), visibility .35s, color .25s var(--ease-out); }
+.project-subnav__top:hover { color: var(--ink); }
+.project-subnav__link:focus-visible, .project-subnav__top:focus-visible { outline-offset: -3px; }
+.js .project-subnav:not(.is-pinned) .project-subnav__top { opacity: 0; visibility: hidden; }
+@media (min-width: 900px) {
+  .project-subnav.is-pinned .project-subnav__label { max-width: 12rem; margin-right: 0; opacity: 1; }
+}
+.js .project-subnav:not(.is-visible) { opacity: 0; transform: translateY(-.5rem); }
 
 .project-group + .project-group { margin-top: clamp(5rem, 9vw, 9rem); }
 .project-group__heading { display: grid; grid-template-columns: 1fr 1fr; align-items: end; gap: 2rem; padding-bottom: 1.25rem; border-bottom: 3px solid var(--line); }
@@ -861,6 +938,9 @@ html[data-theme="dark"] .hero-noise { mix-blend-mode: screen; opacity: .08; }
   .site-header { grid-template-columns: 1fr auto; }
   .main-nav { position: fixed; z-index: 800; left: 50%; bottom: .65rem; width: min(calc(100% - 1.25rem), 31rem); min-height: 3.5rem; padding: .35rem .55rem; display: flex; justify-content: space-around; gap: .25rem; border: 1px solid var(--ink); border-radius: 999px; background: color-mix(in srgb, var(--paper) 92%, transparent); box-shadow: 0 .45rem 1.5rem rgb(0 0 0 / 14%); backdrop-filter: blur(10px); transform: translateX(-50%); }
   .main-nav a { padding: .65rem .45rem; font-size: .64rem; }
+  .project-subnav__label, .project-subnav__top { display: none; }
+  .project-subnav__tabs { gap: 1.5rem; overflow-x: auto; scrollbar-width: none; }
+  .project-subnav__tabs::-webkit-scrollbar { display: none; }
   .hero { min-height: 50rem; }
   .hero-bottom { grid-template-columns: 1fr; }
   .hero-actions { justify-self: start; }
@@ -899,14 +979,18 @@ html[data-theme="dark"] .hero-noise { mix-blend-mode: screen; opacity: .08; }
   .project-group__heading p { justify-self: start; }
   .project-more { justify-content: flex-start; }
   .project-more .button { width: 100%; }
-  .project-card__button { min-height: 0; grid-template-columns: 2rem minmax(0, 1fr) 7.5rem; padding-block: 1.5rem 2rem; }
-  .project-copy { min-width: 0; }
+  /* Single column: the number sits beside the meta row and the arrow drops below the copy. */
+  .project-card__button { min-height: 0; grid-template-columns: minmax(0, 1fr); gap: 1.25rem; padding-block: 1.5rem 2rem; }
+  .project-copy { min-width: 0; grid-column: 1; grid-row: 1; }
   .project-copy h4, .project-summary, .project-tags { overflow-wrap: break-word; }
-  .project-number { grid-row: 1; }
-  .project-copy { grid-column: 2; }
-  .project-arrow { grid-column: 3; grid-row: 1; }
-  .project-cover { grid-column: 1 / -1; height: 14rem; margin-top: .75rem; transform: none; }
-  .project-copy h4 { font-size: clamp(2.1rem, 11vw, 4rem); }
+  .project-card__button .project-number { position: absolute; top: 1.5rem; left: 0; line-height: 1.5; }
+  .project-card__button .project-meta { padding-left: 2.25rem; }
+  .project-arrow { grid-column: 1; grid-row: 2; justify-self: start; }
+  .project-cover { grid-column: 1; grid-row: 3; height: 14rem; transform: none; }
+  .project-copy h4 { font-size: clamp(2.4rem, 12vw, 3.4rem); }
+  .project-copy h4.project-title--long { font-size: clamp(2rem, 10vw, 2.9rem); }
+  .project-meta { align-items: center; }
+  .project-status { font-size: 7px; }
   .service-item { grid-template-columns: 2.25rem 1fr; gap: 1rem; }
   .service-item p, .service-item ul { grid-column: 2; }
   .workflow-list li { grid-template-columns: 2.5rem 1fr; gap: 1rem; }
@@ -961,7 +1045,6 @@ html[data-theme="dark"] .hero-noise { mix-blend-mode: screen; opacity: .08; }
   .hero-kicker { max-width: 100%; border-radius: 0; }
   .main-nav { width: calc(100% - .75rem); }
   .main-nav a { padding-inline: .25rem; font-size: .57rem; }
-  .project-card__button { grid-template-columns: 1.6rem minmax(0, 1fr) 7rem; }
   .project-meta { flex-direction: column; }
 }
 
@@ -970,6 +1053,7 @@ html[data-theme="dark"] .hero-noise { mix-blend-mode: screen; opacity: .08; }
   *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
   .js .reveal { opacity: 1; transform: none; }
   .ticker__track { animation: none !important; transform: none !important; }
+  .js .project-subnav:not(.is-visible) { opacity: 1; transform: none; }
   .cursor { display: none !important; }
   .case-media__scrub-hint { display: none; }
 }

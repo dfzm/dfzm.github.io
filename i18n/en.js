@@ -52,7 +52,7 @@ window.PORTFOLIO_I18N = {
   },
   projects: {
     "ca-na-tess": {
-      index: "01",
+      index: "05",
       title: "Ca na Tess",
       category: "Professional project",
       status: "Live · 2026",
@@ -106,7 +106,7 @@ window.PORTFOLIO_I18N = {
       ]
     },
     "colive": {
-      index: "02",
+      index: "06",
       title: "Colive",
       category: "Professional project",
       status: "Proposals implemented · 2025",
@@ -281,7 +281,7 @@ window.PORTFOLIO_I18N = {
       ]
     },
     "mega": {
-      index: "03",
+      index: "07",
       title: "Mega",
       category: "Professional project",
       status: "Live · 2025",
@@ -334,7 +334,7 @@ window.PORTFOLIO_I18N = {
       ]
     },
     "barcelo-indajaus": {
-      index: "04",
+      index: "08",
       title: "Barceló Indajaus",
       category: "Professional project",
       status: "Live · 2024",
@@ -379,7 +379,7 @@ window.PORTFOLIO_I18N = {
       ]
     },
     "calculadora-ia": {
-      index: "08",
+      index: "04",
       title: "Cost estimate calculator with AI chatbot",
       category: "Personal project",
       status: "Public demo",
@@ -415,7 +415,7 @@ window.PORTFOLIO_I18N = {
       ]
     },
     "crm-dz": {
-      index: "06",
+      index: "02",
       title: "CRM DZ",
       category: "Personal project · Full-stack web app",
       status: "Live · in active development · target: December 2026",
@@ -460,7 +460,7 @@ window.PORTFOLIO_I18N = {
       ]
     },
     "cms-propio": {
-      index: "05",
+      index: "01",
       title: "CMS AI DZ",
       category: "Personal project · Full-stack web app",
       status: "In development · working core and design · target: January 2027",
@@ -546,7 +546,7 @@ window.PORTFOLIO_I18N = {
       ]
     },
     "movimoney": {
-      index: "07",
+      index: "03",
       title: "MoviMoney",
       category: "Personal project",
       status: "In development · Working core and design",
@@ -587,7 +587,7 @@ window.PORTFOLIO_I18N = {
       ]
     },
     "dream-school": {
-      index: "11",
+      index: "07",
       title: "Dream School",
       category: "Professional project",
       status: "Live",
@@ -631,7 +631,7 @@ window.PORTFOLIO_I18N = {
       ]
     },
     "preventing-treating": {
-      index: "10",
+      index: "06",
       title: "Preventing / Treating With Experts",
       category: "Professional project",
       status: "Two live sites",
@@ -695,7 +695,7 @@ window.PORTFOLIO_I18N = {
       ]
     },
     "barentszen": {
-      index: "09",
+      index: "05",
       title: "Barentszen / Barentszen Group",
       category: "Professional project",
       status: "Two live sites",
