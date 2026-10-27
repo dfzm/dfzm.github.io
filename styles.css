@@ -561,7 +561,7 @@ html[data-theme="dark"] .project-subnav.is-pinned { box-shadow: 0 12px 32px -12p
 .project-copy { display: flex; flex-direction: column; gap: .9rem; }
 .project-meta { display: flex; flex-wrap: wrap; gap: .5rem 1.25rem; font-size: .68rem; font-weight: 800; text-transform: uppercase; letter-spacing: .08em; }
 .project-meta span:first-child { text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: .3em; }
-.project-copy h4 { margin: 0; font: 900 clamp(2.35rem, 5.2vw, 5.8rem)/.83 var(--display); letter-spacing: -.065em; text-transform: uppercase; }
+.project-copy h4, .project-copy h3 { margin: 0; font: 900 clamp(2.35rem, 5.2vw, 5.8rem)/.83 var(--display); letter-spacing: -.065em; text-transform: uppercase; }
 .project-role { font: italic 1rem/1.3 var(--serif); }
 .project-summary { max-width: 58ch; font-size: .92rem; color: var(--muted); }
 .project-store-link { align-self: flex-start; display: inline-flex; max-width: 100%; line-height: 0; }
@@ -982,13 +982,13 @@ html[data-theme="dark"] .project-subnav.is-pinned { box-shadow: 0 12px 32px -12p
   /* Single column: the number sits beside the meta row and the arrow drops below the copy. */
   .project-card__button { min-height: 0; grid-template-columns: minmax(0, 1fr); gap: 1.25rem; padding-block: 1.5rem 2rem; }
   .project-copy { min-width: 0; grid-column: 1; grid-row: 1; }
-  .project-copy h4, .project-summary, .project-tags { overflow-wrap: break-word; }
+  .project-copy h4, .project-copy h3, .project-summary, .project-tags { overflow-wrap: break-word; }
   .project-card__button .project-number { position: absolute; top: 1.5rem; left: 0; line-height: 1.5; }
   .project-card__button .project-meta { padding-left: 2.25rem; }
   .project-arrow { grid-column: 1; grid-row: 2; justify-self: start; }
   .project-cover { grid-column: 1; grid-row: 3; height: 14rem; transform: none; }
-  .project-copy h4 { font-size: clamp(2.4rem, 12vw, 3.4rem); }
-  .project-copy h4.project-title--long { font-size: clamp(2rem, 10vw, 2.9rem); }
+  .project-copy h4, .project-copy h3 { font-size: clamp(2.4rem, 12vw, 3.4rem); }
+  .project-copy h4.project-title--long, .project-copy h3.project-title--long { font-size: clamp(2rem, 10vw, 2.9rem); }
   .project-meta { align-items: center; }
   .project-status { font-size: 7px; }
   .service-item { grid-template-columns: 2.25rem 1fr; gap: 1rem; }
