@@ -72,6 +72,7 @@ window.PORTFOLIO_I18N = {
       technology: "UX/UI · Figma · WordPress · Gravity Forms",
       link: "https://canatess.com/consulta-nutricional",
       linkLabel: "Visitar consulta nutricional de Ca na Tess",
+      introLinkLabel: "Ver proyecto",
       mediaSections: [
         {
           placement: "afterChallenge",
@@ -126,6 +127,7 @@ window.PORTFOLIO_I18N = {
       technology: "Auditoría UX/UI · Wireframes · Diseño de alta fidelidad · Figma",
       link: "https://colive.es/",
       linkLabel: "Visitar el sitio de Colive",
+      introLinkLabel: "Ver proyecto",
       note: "La auditoría, los wireframes y el diseño de alta fidelidad son míos; el desarrollo lo llevó el equipo de Colive. No participé en la implementación y la medición de resultados no formó parte del alcance, así que la comparación con el sitio público es visual y no incluye métricas. Las propuestas de Mi cuenta no llegaron a publicarse. Los correos post-reserva y las páginas institucionales quedan fuera de esta selección por no tener exportaciones publicables.",
       mediaSections: [
         {
@@ -301,6 +303,7 @@ window.PORTFOLIO_I18N = {
       technology: "WordPress · Elementor Pro · Responsive",
       link: "https://www.mega.nl/",
       linkLabel: "Visitar el sitio de Mega",
+      introLinkLabel: "Ver proyecto",
       mediaSections: [
         {
           placement: "afterProcess",
@@ -354,6 +357,7 @@ window.PORTFOLIO_I18N = {
       technology: "PrestaShop · E-commerce · Responsive",
       link: "https://barceloindajaus.com/",
       linkLabel: "Visitar la tienda de Barceló Indajaus",
+      introLinkLabel: "Ver proyecto",
       note: "Actualmente también soy responsable del soporte, el mantenimiento y las modificaciones del sitio. Como parte de esa continuidad técnica, completé primero una migración estable de PrestaShop 7 a PrestaShop 8 y, en 2026, una segunda actualización mayor de PrestaShop 8 a PrestaShop 9. Ambas migraciones se realizaron correctamente y el sitio continuó operativo después de cada actualización.",
       mediaSections: [
         {
@@ -399,6 +403,7 @@ window.PORTFOLIO_I18N = {
       technology: "HTML · CSS · JavaScript · Google Apps Script · IA",
       link: "https://dzionix.com/demo-reformas/index.html",
       linkLabel: "Probar la demo de la calculadora de reformas",
+      introLinkLabel: "Ver proyecto",
       mediaSections: [
         {
           placement: "afterProcess",
@@ -435,6 +440,7 @@ window.PORTFOLIO_I18N = {
       technology: "Next.js · React · TypeScript · Prisma · MySQL · Auth.js",
       link: "https://crm.dzionix.com/",
       linkLabel: "Visitar CRM DZ",
+      introLinkLabel: "Ver proyecto",
       noteLink: { href: "https://crm.dzionix.com/", label: "crm.dzionix.com", ariaLabel: "Visitar CRM DZ (se abre en una pestaña nueva)" },
       note: "CRM DZ ya está disponible públicamente en crm.dzionix.com y se actualiza cada semana. El proyecto sigue en desarrollo: la versión publicada es funcional, pero el dashboard, el diseño visual, los estados y otras áreas continuarán evolucionando con el objetivo de completar el producto a finales de 2026. No se presenta como un alcance cerrado ni como una implementación definitiva.",
       mediaSections: [
@@ -482,6 +488,7 @@ window.PORTFOLIO_I18N = {
       technology: "Next.js · React · TypeScript · Prisma · MySQL · Supabase Storage · IA",
       link: "https://cms.dzionix.com/",
       linkLabel: "Visitar la demo de CMS AI DZ",
+      introLinkLabel: "Ver proyecto",
       noteLink: { href: "https://cms.dzionix.com/", label: "cms.dzionix.com", ariaLabel: "Visitar la demo de CMS AI DZ (se abre en una pestaña nueva)" },
       note: "CMS AI DZ cuenta con una demo pública en cms.dzionix.com. El proyecto sigue en desarrollo: la versión publicada es funcional, pero el chat con IA, el editor, el design system y otras áreas continuarán evolucionando. No se presenta como SaaS multiagencia ni como un sistema que publica automáticamente con IA.",
       mediaSections: [
@@ -566,6 +573,7 @@ window.PORTFOLIO_I18N = {
       deliverables: ["Acceso y sesión locales", "Navegación Drawer y Bottom Tabs", "Registro de ingresos y gastos", "Resumen de saldo y movimientos", "Historial con búsqueda y filtros", "Gestión de categorías", "Persistencia local y migración documentada"],
       technology: "Expo · React Native · TypeScript · AsyncStorage · expo-secure-store",
       playStoreUrl: "https://play.google.com/store/apps/details?id=com.dzionix.misgastoslocal&hl=es",
+      introLinkLabel: "Ver en Google Play",
       note: "Los datos se almacenan localmente en el dispositivo. No es un producto financiero listo para producción y no incluye backend ni sincronización.",
       mediaSections: [
         {
@@ -608,6 +616,7 @@ window.PORTFOLIO_I18N = {
       technology: "WordPress · Elementor Pro · ACF · CPT",
       link: "https://dreamschool.es/",
       linkLabel: "Visitar el sitio de Dream School",
+      introLinkLabel: "Ver proyecto",
       mediaSections: [
         {
           placement: "afterChallenge",
@@ -652,6 +661,7 @@ window.PORTFOLIO_I18N = {
       technology: "WordPress · Elementor · Responsive",
       link: "https://preventingwithexperts.com/",
       linkLabel: "Visitar Preventing With Experts",
+      introLinkLabel: "Ver proyecto",
       mediaSections: [
         {
           placement: "afterChallenge",
@@ -717,6 +727,7 @@ window.PORTFOLIO_I18N = {
       technology: "WordPress · Elementor · ACF · CPT · WPML",
       link: "https://barentszen.nl/",
       linkLabel: "Visitar el sitio de Barentszen",
+      introLinkLabel: "Ver proyecto",
       mediaSections: [
         {
           placement: "afterChallenge",

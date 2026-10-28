@@ -774,6 +774,10 @@ html[data-theme="dark"] .project-subnav.is-pinned { box-shadow: 0 12px 32px -12p
 .case-hero__meta span { padding: .35rem .55rem; border: 1px solid #171714; border-radius: 999px; font-size: .62rem; font-weight: 800; text-transform: uppercase; letter-spacing: .06em; }
 .case-hero h2 { margin: 0; max-width: 13ch; font: 900 clamp(3rem, 7vw, 7.5rem)/.8 var(--display); letter-spacing: -.07em; text-transform: uppercase; }
 .case-hero__summary { margin: 0; align-self: end; font: italic clamp(1.25rem, 2.3vw, 2.25rem)/1.15 var(--serif); }
+.case-hero__intro { min-width: 0; }
+.case-hero__link { display: inline-flex; align-items: center; gap: .5rem; min-height: 44px; margin-top: .75rem; color: inherit; background: none; border: 0; font-size: .875rem; font-weight: 650; text-decoration: none; text-underline-offset: .2em; }
+.case-hero__link:hover, .case-hero__link:focus-visible { text-decoration: underline; }
+.case-hero__link:focus-visible { outline: 2px solid currentColor; outline-offset: 4px; }
 .case-body { padding: clamp(2rem, 6vw, 6rem); }
 .case-facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr)); border-block: 1px solid var(--ink); }
 .case-facts div { padding: 1.25rem; border-right: 1px solid var(--ink); }

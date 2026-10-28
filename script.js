@@ -248,6 +248,15 @@ function createProjectMarkup(project) {
   ` : "";
 
   const safeProjectLink = getSafeURL(project.link);
+  const safeStoreLink = getSafeURL(project.playStoreUrl);
+  const safeIntroLink = safeProjectLink || safeStoreLink;
+  const introLinkAriaLabel = safeProjectLink ? `${project.linkLabel} ${ui.newTab}` : ui.store.label;
+  const introLink = safeIntroLink && project.introLinkLabel ? `
+    <a class="case-hero__link" href="${escapeHTML(safeIntroLink)}" target="_blank" rel="noopener noreferrer" aria-label="${escapeHTML(introLinkAriaLabel)}">
+      ${escapeHTML(project.introLinkLabel)} <span aria-hidden="true">↗</span>
+    </a>
+  ` : "";
+  const summary = `<p class="case-hero__summary">${escapeHTML(project.summary)}</p>`;
   const projectLink = safeProjectLink ? `
     <a href="${escapeHTML(safeProjectLink)}" target="_blank" rel="noopener noreferrer" aria-label="${escapeHTML(project.linkLabel)} ${escapeHTML(ui.newTab)}">
       ${escapeHTML(project.linkLabel)} <span aria-hidden="true">↗</span>
@@ -261,7 +270,6 @@ function createProjectMarkup(project) {
     </a>
   ` : "";
 
-  const safeStoreLink = getSafeURL(project.playStoreUrl);
   const safeStoreBadge = getSafeURL(ui.store.badgeSrc);
   const storeLink = safeStoreLink ? `
     <a class="case-links__store" href="${escapeHTML(safeStoreLink)}" target="_blank" rel="noopener noreferrer" aria-label="${escapeHTML(ui.store.label)}">
@@ -292,7 +300,7 @@ function createProjectMarkup(project) {
         <div class="case-hero__meta"><span>${escapeHTML(project.category)}</span><span>${escapeHTML(project.status)}</span></div>
         <h2 id="dialog-title">${escapeHTML(project.title)}</h2>
       </div>
-      <p class="case-hero__summary">${escapeHTML(project.summary)}</p>
+      ${introLink ? `<div class="case-hero__intro">${summary}${introLink}</div>` : summary}
     </div>
     <div class="case-body">
       <dl class="case-facts">
