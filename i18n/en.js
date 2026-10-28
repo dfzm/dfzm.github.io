@@ -479,10 +479,10 @@ window.PORTFOLIO_I18N = {
       ],
       deliverables: ["Block-based page editor", "Public renderer", "Editorial workflow and permissions", "Design system and reusable components", "Conversational page creation", "Blog, SEO, form, and media management"],
       technology: "Next.js · React · TypeScript · Prisma · MySQL · Supabase Storage · AI",
-      link: "https://cms-ai-dz.vercel.app/",
+      link: "https://cms.dzionix.com/",
       linkLabel: "Visit the CMS AI DZ demo",
-      noteLink: { href: "https://cms-ai-dz.vercel.app/", label: "cms-ai-dz.vercel.app", ariaLabel: "Visit the CMS AI DZ demo (opens in a new tab)" },
-      note: "CMS AI DZ has a public demo at cms-ai-dz.vercel.app. The project is still in development: the published version works, but the AI chat, the editor, the design system, and other areas will keep evolving. It isn’t presented as a multi-agency SaaS or as a system that publishes automatically with AI.",
+      noteLink: { href: "https://cms.dzionix.com/", label: "cms.dzionix.com", ariaLabel: "Visit the CMS AI DZ demo (opens in a new tab)" },
+      note: "CMS AI DZ has a public demo at cms.dzionix.com. The project is still in development: the published version works, but the AI chat, the editor, the design system, and other areas will keep evolving. It isn’t presented as a multi-agency SaaS or as a system that publishes automatically with AI.",
       mediaSections: [
         {
           placement: "afterChallenge",
