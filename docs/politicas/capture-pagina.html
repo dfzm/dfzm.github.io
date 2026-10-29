@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy for Capture Página</title>
+  <style>
+    body {
+      margin: 0;
+      background: #ffffff;
+      color: #1f1a17;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+    }
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 32px 16px;
+    }
+    h1, h2 {
+      line-height: 1.3;
+    }
+    hr {
+      border: 0;
+      border-top: 1px solid #e5ddd6;
+      margin: 24px 0;
+    }
+    code {
+      font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+      font-size: 0.92em;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Privacy Policy for Capture Página</h1>
+
+    <p>
+      <strong>Last Updated:</strong> October 26, 2026<br>
+      <strong>Extension Name:</strong> Capture Página<br>
+      <strong>Publisher / Developer:</strong> Daniel Felipe Zapata Martinez<br>
+      <strong>Contact Email:</strong> danielzapatam93@gmail.com<br>
+      <strong>Website / Repository:</strong> <a href="https://dfzm.github.io/">https://dfzm.github.io/</a>
+    </p>
+
+    <hr>
+
+    <h2>1. Introduction &amp; Core Principle</h2>
+
+    <p>Capture Página ("the Extension") is designed from the ground up with a strict <strong>local-first, privacy-by-design</strong> architecture.</p>
+
+    <p>The Extension's single purpose is to capture, annotate, and export webpage screenshots at your explicit request. <strong>All data processing, image stitching, freehand drawing, and file encoding occur exclusively on your local computer.</strong> The Extension does not operate external servers, does not transmit your data off your device, does not sell or share user data, and contains no analytics, advertising, or telemetry trackers.</p>
+
+    <hr>
+
+    <h2>2. Information Handled by the Extension</h2>
+
+    <p>When you explicitly trigger a capture, the Extension handles the following categories of data locally on your device:</p>
+
+    <ol>
+      <li>
+        <strong>Webpage Visual Content (Screenshots):</strong><br>
+        The Extension captures the visual pixel data of the active tab that you explicitly request to capture (either the visible viewport, the full scrolling document, or a selected rectangular area).
+      </li>
+      <li>
+        <strong>Page Title and URL:</strong><br>
+        The Extension reads the title and URL of the active tab at the exact moment of capture. This information is used solely to display the page title and domain in the result preview header and to generate a clean, sanitized default filename for your downloaded image (e.g. <code>PageTitle_YYYY-MM-DD_HH-mm-ss.png</code>).
+      </li>
+      <li>
+        <strong>User Annotations (Brush Strokes):</strong><br>
+        If you choose to use the "Draw" tool, the vector coordinates, colors, and brush widths of the strokes you draw are held <strong>strictly in the active result tab's temporary in-memory JavaScript/DOM state</strong> (<code>AnnotationOverlayController</code>). Strokes are <strong>not</strong> persisted in IndexedDB and are lost if the result tab is refreshed or closed.
+      </li>
+    </ol>
+
+    <p><strong>Programmatic Data Extraction vs. Visual Content:</strong></p>
+    <ul>
+      <li>The Extension does <strong>not</strong> programmatically inspect, scrape, extract, or transmit your personal identity, passwords, payment details, form inputs, cookie jars, or browsing history.</li>
+      <li><strong>Visual Information Notice:</strong> Because the Extension captures raw visual screenshot pixels of the tab you select, any personal, confidential, or sensitive information visibly displayed on that webpage at the moment of capture (such as your account username, email address, profile photo, or on-screen billing statements) will naturally be included as visual pixels within the screenshot image.</li>
+      <li>All such visual pixels remain exclusively on your local computer within your browser's private storage until you explicitly export or delete them.</li>
+    </ul>
+
+    <hr>
+
+    <h2>3. Storage and Data Transmission</h2>
+
+    <ul>
+      <li>
+        <strong>On-Device Storage (IndexedDB):</strong><br>
+        Captured image segment bitmaps and page metadata (title, URL, dimensions) are stored locally on your device in the browser's origin-private IndexedDB database named <code>capture-page</code> (store <code>captures</code>).
+      </li>
+      <li>
+        <strong>In-Memory Tab State:</strong><br>
+        Freehand brush annotations reside solely in volatile tab memory and are not written to disk or database.
+      </li>
+      <li>
+        <strong>Exported Files &amp; Clipboard:</strong><br>
+        When you download a PNG or PDF file, it is saved directly to your local file system via your browser's standard download manager. When you copy an image, it is written to your operating system clipboard. These exported files and clipboard copies exist independently on your computer outside the Extension's IndexedDB storage.
+      </li>
+      <li>
+        <strong>Zero Remote Transmission:</strong><br>
+        The Extension does <strong>not</strong> send or upload your screenshots, URLs, titles, or annotations to any remote server, third party, cloud service, or API. Everything remains strictly within your browser.
+      </li>
+    </ul>
+
+    <hr>
+
+    <h2>4. Data Retention and Deletion Policy</h2>
+
+    <p>The Extension manages local storage according to the following real, automated lifecycle rules:</p>
+
+    <ul>
+      <li>
+        <strong>No Immediate Deletion on Tab Close:</strong><br>
+        Closing the capture result tab does <strong>not</strong> immediately delete the capture record from your local IndexedDB. This design ensures that you can safely reload the result tab (<code>result.html?id=...</code>) or recover your capture if you accidentally close the tab.
+      </li>
+      <li>
+        <strong>Trigger-Based Automated Purge (Records Older than 1 Hour):</strong><br>
+        The Extension automatically checks and purges expired records upon <strong>browser profile startup</strong> (<code>chrome.runtime.onStartup</code>) and immediately before each new capture operation (<code>safePurge()</code>). Any capture record with a timestamp older than <strong>1 hour (3,600,000 milliseconds)</strong> is permanently deleted from IndexedDB.
+      </li>
+      <li>
+        <strong>Not an Exact Timer:</strong><br>
+        Deletions do not execute on an exact 60-minute background alarm; cleanup is evaluated and executed upon the next capture or browser restart once the 1-hour cutoff timestamp has passed.
+      </li>
+      <li>
+        <strong>Scope of Purge:</strong><br>
+        The automated 1-hour purge applies strictly to the Extension's internal IndexedDB database cache. Files previously downloaded to your local file system or images copied to your system clipboard remain under your direct operating system control and are not deleted by the Extension.
+      </li>
+      <li>
+        <strong>Verified Manual Deletion:</strong><br>
+        Users who wish to manually erase the Extension's stored data can do so using either of the following verified methods:
+        <ol>
+          <li>
+            <strong>Uninstalling the Extension:</strong> Right-click the Capture Página icon in your Chrome toolbar (or navigate to <code>chrome://extensions</code>) and select <strong>Remove from Chrome</strong>. This action immediately, completely, and permanently destroys the Extension's origin-private IndexedDB database and all associated cached images.
+          </li>
+          <li>
+            <strong>Chrome Developer Tools Site Storage:</strong> On the extension result tab (<code>result.html</code>), open Chrome Developer Tools (F12) → go to the <strong>Application</strong> tab → select <strong>Storage</strong> in the sidebar → click <strong>Clear site data</strong>.
+          </li>
+        </ol>
+        <em>(Note: Chrome's general "Clear browsing data" dialog targets web origins and does not reliably guarantee the purging of extension internal storage unless the extension is uninstalled or its site data is cleared directly).</em>
+      </li>
+    </ul>
+
+    <hr>
+
+    <h2>5. Browser Permissions Used</h2>
+
+    <p>The Extension requests only the minimum permissions necessary to deliver its core functionality:</p>
+
+    <ul>
+      <li>
+        <strong><code>activeTab</code>:</strong><br>
+        Grants temporary access to the currently active tab only when you open the popup or initiate a capture. Used to take the screenshot via <code>chrome.tabs.captureVisibleTab</code> and inject the scrolling helper. It does not allow background monitoring or access to any un-interacted tabs.
+      </li>
+      <li>
+        <strong><code>scripting</code>:</strong><br>
+        Allows the Extension to inject the in-page helper (<code>page-agent.js</code>, <code>scroll-container.js</code> and, for area selection, <code>region-geometry.js</code>) into the active tab to calculate scroll dimensions, perform progressive scrolling during full-page captures, and restore original page scroll and styles when capture completes. It also inserts and removes the overlay stylesheet (<code>overlay.css</code>), which draws the area-selection rectangle and backdrop; it is inserted only when area selection starts or a selection error notice is shown, and removed when they end.
+      </li>
+    </ul>
+
+    <p>
+      <strong>Permissions Deliberately Omitted:</strong><br>
+      The Extension deliberately does not request <code>&lt;all_urls&gt;</code>, broad host permissions, <code>webRequest</code>, <code>downloads</code>, <code>storage</code>, or <code>debugger</code>.
+    </p>
+
+    <hr>
+
+    <h2>6. Third-Party Services and Analytics</h2>
+
+    <p>Capture Página contains:</p>
+    <ul>
+      <li><strong>No</strong> third-party SDKs, analytics libraries, or telemetry trackers.</li>
+      <li><strong>No</strong> remote scripts or dynamically downloaded code (strict <code>script-src 'self'</code> Content Security Policy).</li>
+      <li><strong>No</strong> advertising networks or data brokers.</li>
+      <li><strong>No</strong> cookies or tracking pixels.</li>
+    </ul>
+
+    <p>No user data is ever sold, leased, or transferred to third parties for any purpose.</p>
+
+    <hr>
+
+    <h2>7. Changes to this Policy</h2>
+
+    <p>If this Privacy Policy is updated in the future (for instance, to reflect new features), the updated document will be published with a revised "Last Updated" date. Any change that expands data processing will be disclosed transparently in release notes and in the Chrome Web Store.</p>
+
+    <hr>
+
+    <h2>8. Contact Information</h2>
+
+    <p>If you have questions, feedback, or concerns regarding this Privacy Policy or the data practices of Capture Página, please contact:</p>
+
+    <ul>
+      <li><strong>Developer:</strong> Daniel Felipe Zapata Martinez</li>
+      <li><strong>Email:</strong> <a href="mailto:danielzapatam93@gmail.com">danielzapatam93@gmail.com</a></li>
+      <li><strong>Project URL:</strong> <a href="https://dfzm.github.io/">https://dfzm.github.io/</a></li>
+    </ul>
+  </main>
+</body>
+</html>
